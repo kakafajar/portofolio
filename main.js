@@ -87,7 +87,40 @@ const sections = [
       if (btnContainer) btnContainer.classList.add("hidden");
     }
   }),
-  loadSection("contact", "contact.html"),
+  loadSection("contact", "contact.html").then(() => {
+    const contactForm = document.getElementById("contact-form");
+    if (contactForm) {
+      contactForm.addEventListener("submit", (e) => {
+        e.preventDefault();
+
+        // Get values
+        const name = document.getElementById("name").value;
+        const email = document.getElementById("email").value;
+        const subject = document.getElementById("subject").value;
+        const message = document.getElementById("message").value;
+
+        // Validation (Simple)
+        if (!name || !message) {
+          alert("Harap isi Nama dan Pesan.");
+          return;
+        }
+
+        // Format Message for WhatsApp
+        // %0A is newline in URL encoding
+        const whatsappMessage = `*Pesan Baru dari Portfolio Website*:%0A%0A` +
+          `*Nama:* ${name}%0A` +
+          `*Email:* ${email}%0A` +
+          `*Subject:* ${subject}%0A` +
+          `*Pesan:*%0A${message}`;
+
+        const phoneNumber = "6285890558653"; // Your WhatsApp Number
+        const whatsappUrl = `https://wa.me/${phoneNumber}?text=${whatsappMessage}`;
+
+        // Redirect to WhatsApp
+        window.open(whatsappUrl, "_blank");
+      });
+    }
+  }),
   loadSection("footer", "footer.html")
 ];
 
