@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+  <!-- Basic Meta -->
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Projek Magang PT CBI | Fajar Herlambang</title>
+
+  <!-- Tailwind & UI Libraries -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js" defer></script>
+  <script src="https://unpkg.com/@phosphor-icons/web" defer></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .glass-card {
+      background: rgba(255, 255, 255, 0.8);
+      backdrop-filter: blur(10px);
+      border: 1px solid rgba(255, 255, 255, 0.3);
+    }
+  </style>
+</head>
+
+<body class="bg-gray-50 text-gray-900">
+
+  <!-- Navbar -->
+  <div id="navbar"></div>
+
+  <!-- Main Content -->
+  <main class="pt-24 pb-20">
+    <div class="container mx-auto px-6">
+      
+      <!-- Breadcrumb & Header -->
+      <div class="mb-12" data-aos="fade-down">
+        <nav class="flex mb-4" aria-label="Breadcrumb">
+          <ol class="inline-flex items-center space-x-1 md:space-x-3">
+            <li class="inline-flex items-center">
+              <a href="index.html" class="inline-flex items-center text-sm font-medium text-gray-700 hover:text-indigo-600">
+                <i class="ph-bold ph-house-line mr-2"></i> Home
+              </a>
+            </li>
+            <li>
+              <div class="flex items-center">
+                <i class="fas fa-chevron-right text-gray-400 text-xs mx-2"></i>
+                <span class="text-sm font-medium text-gray-500">Projek Magang PT CBI</span>
+              </div>
+            </li>
+          </ol>
+        </nav>
+        
+        <h1 class="text-4xl md:text-5xl font-extrabold text-gray-900 mb-4">
+          Internship <span class="text-transparent bg-clip-text bg-gradient-to-r from-indigo-600 to-purple-600">Projects</span>
+        </h1>
+        <p class="text-gray-600 max-w-3xl text-lg">
+          Koleksi sistem informasi dan dashboard monitoring yang saya kembangkan selama masa magang di <strong>PT Century Batteries Indonesia (Astra Otoparts Group)</strong>.
+        </p>
+      </div>
+
+      <!-- Projects Grid -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        
+        <!-- Project 1: Formation IGO -->
+        <div class="bg-white rounded-3xl shadow-lg border border-gray-100 overflow-hidden group hover:shadow-2xl transition-all duration-300" data-aos="fade-up" data-aos-delay="100">
+          <div class="relative h-48 bg-gray-200 overflow-hidden">
+            <img src="assets/production_monitoring.png" alt="Formation IGO" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+            <div class="absolute top-4 left-4">
+              <span class="bg-indigo-600 text-white text-[10px] font-bold px-2 py-1 rounded-md">MONITORING</span>
+            </div>
+          </div>
+          <div class="p-6">
+            <h3 class="text-xl font-bold text-gray-900 mb-2">Formation IGO Drying</h3>
+            <p class="text-gray-500 text-sm mb-4 line-clamp-2">Sistem monitoring checksheet proses pengeringan pada mesin IGO secara real-time.</p>
+            <button data-modal-target="modal-igo" data-modal-toggle="modal-igo" class="w-full py-2.5 bg-gray-50 text-indigo-600 font-semibold rounded-xl hover:bg-indigo-600 hover:text-white transition-all">
+              Lihat Detail
+            </button>
+          </div>
+        </div>
+
+        <!-- Project 2: APD Dashboard -->
+        <div class="bg-white rounded-3xl shadow-lg border border-gray-100 overflow-hidden group hover:shadow-2xl transition-all duration-300" data-aos="fade-up" data-aos-delay="200">
+          <div class="relative h-48 bg-gray-200 overflow-hidden">
+            <img src="assets/apd_dashboard.png" alt="APD Dashboard" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+            <div class="absolute top-4 left-4">
+              <span class="bg-rose-600 text-white text-[10px] font-bold px-2 py-1 rounded-md">SAFETY</span>
+            </div>
+          </div>
+          <div class="p-6">
+            <h3 class="text-xl font-bold text-gray-900 mb-2">APD Monitoring</h3>
+            <p class="text-gray-500 text-sm mb-4 line-clamp-2">Dashboard visualisasi penggunaan Alat Pelindung Diri di area produksi.</p>
+            <button data-modal-target="modal-apd" data-modal-toggle="modal-apd" class="w-full py-2.5 bg-gray-50 text-indigo-600 font-semibold rounded-xl hover:bg-indigo-600 hover:text-white transition-all">
+              Lihat Detail
+            </button>
+          </div>
+        </div>
+
+        <!-- Project 3: Skill Matrix -->
+        <div class="bg-white rounded-3xl shadow-lg border border-gray-100 overflow-hidden group hover:shadow-2xl transition-all duration-300" data-aos="fade-up" data-aos-delay="300">
+          <div class="relative h-48 bg-gray-200 overflow-hidden">
+            <img src="assets/skill_matrix.png" alt="Skill Matrix" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+            <div class="absolute top-4 left-4">
+              <span class="bg-emerald-600 text-white text-[10px] font-bold px-2 py-1 rounded-md">HR & SKILLS</span>
+            </div>
+          </div>
+          <div class="p-6">
+            <h3 class="text-xl font-bold text-gray-900 mb-2">Skill Matrix MP</h3>
+            <p class="text-gray-500 text-sm mb-4 line-clamp-2">Aplikasi pemantauan kompetensi Man Power untuk penempatan staf yang optimal.</p>
+            <button data-modal-target="modal-skill" data-modal-toggle="modal-skill" class="w-full py-2.5 bg-gray-50 text-indigo-600 font-semibold rounded-xl hover:bg-indigo-600 hover:text-white transition-all">
+              Lihat Detail
+            </button>
+          </div>
+        </div>
+
+        <!-- Project 4: Henkaten Board -->
+        <div class="bg-white rounded-3xl shadow-lg border border-gray-100 overflow-hidden group hover:shadow-2xl transition-all duration-300" data-aos="fade-up" data-aos-delay="400">
+          <div class="relative h-48 bg-gray-100 flex items-center justify-center">
+             <i class="ph-bold ph-arrows-left-right text-6xl text-gray-300"></i>
+          </div>
+          <div class="p-6">
+            <h3 class="text-xl font-bold text-gray-900 mb-2">Henkaten Board</h3>
+            <p class="text-gray-500 text-sm mb-4 line-clamp-2">Sistem pencatatan perubahan 4M pada line produksi secara digital.</p>
+            <button data-modal-target="modal-henkaten" data-modal-toggle="modal-henkaten" class="w-full py-2.5 bg-gray-50 text-indigo-600 font-semibold rounded-xl hover:bg-indigo-600 hover:text-white transition-all">
+              Lihat Detail
+            </button>
+          </div>
+        </div>
+
+        <!-- Project 5: Interval Pasting -->
+        <div class="bg-white rounded-3xl shadow-lg border border-gray-100 overflow-hidden group hover:shadow-2xl transition-all duration-300" data-aos="fade-up" data-aos-delay="500">
+          <div class="relative h-48 bg-gray-100 flex items-center justify-center overflow-hidden">
+            <i class="ph-bold ph-clock text-6xl text-gray-300"></i>
+            <div class="absolute top-4 left-4">
+              <span class="bg-blue-600 text-white text-[10px] font-bold px-2 py-1 rounded-md">PROCESS</span>
+            </div>
+          </div>
+          <div class="p-6">
+            <h3 class="text-xl font-bold text-gray-900 mb-2">Interval Pasting</h3>
+            <p class="text-gray-500 text-sm mb-4 line-clamp-2">Monitoring interval waktu pada proses pasting untuk menjaga efisiensi produksi.</p>
+            <button data-modal-target="modal-pasting" data-modal-toggle="modal-pasting" class="w-full py-2.5 bg-gray-50 text-indigo-600 font-semibold rounded-xl hover:bg-indigo-600 hover:text-white transition-all">
+              Lihat Detail
+            </button>
+          </div>
+        </div>
+
+        <!-- Project 6: Checksheet Formation -->
+        <div class="bg-white rounded-3xl shadow-lg border border-gray-100 overflow-hidden group hover:shadow-2xl transition-all duration-300" data-aos="fade-up" data-aos-delay="600">
+          <div class="relative h-48 bg-gray-100 flex items-center justify-center overflow-hidden">
+            <i class="ph-bold ph-list-checks text-6xl text-gray-300"></i>
+            <div class="absolute top-4 left-4">
+              <span class="bg-purple-600 text-white text-[10px] font-bold px-2 py-1 rounded-md">DIGITAL FORM</span>
+            </div>
+          </div>
+          <div class="p-6">
+            <h3 class="text-xl font-bold text-gray-900 mb-2">Checksheet Formation</h3>
+            <p class="text-gray-500 text-sm mb-4 line-clamp-2">Digitalisasi formulir checksheet harian pada proses formation baterai.</p>
+            <button data-modal-target="modal-checksheet" data-modal-toggle="modal-checksheet" class="w-full py-2.5 bg-gray-50 text-indigo-600 font-semibold rounded-xl hover:bg-indigo-600 hover:text-white transition-all">
+              Lihat Detail
+            </button>
+          </div>
+        </div>
+
+        <!-- Project 7: Dashboard Formation -->
+        <div class="bg-white rounded-3xl shadow-lg border border-gray-100 overflow-hidden group hover:shadow-2xl transition-all duration-300" data-aos="fade-up" data-aos-delay="700">
+          <div class="relative h-48 bg-gray-100 flex items-center justify-center overflow-hidden">
+            <i class="ph-bold ph-chart-line-up text-6xl text-gray-300"></i>
+            <div class="absolute top-4 left-4">
+              <span class="bg-amber-600 text-white text-[10px] font-bold px-2 py-1 rounded-md">DASHBOARD</span>
+            </div>
+          </div>
+          <div class="p-6">
+            <h3 class="text-xl font-bold text-gray-900 mb-2">Monitoring Formation</h3>
+            <p class="text-gray-500 text-sm mb-4 line-clamp-2">Dashboard pemantauan status charging dan kesehatan baterai selama proses formation.</p>
+            <button data-modal-target="modal-monitoring-form" data-modal-toggle="modal-monitoring-form" class="w-full py-2.5 bg-gray-50 text-indigo-600 font-semibold rounded-xl hover:bg-indigo-600 hover:text-white transition-all">
+              Lihat Detail
+            </button>
+          </div>
+        </div>
+
+        <!-- Project 8: Shop Floor Management -->
+        <div class="bg-white rounded-3xl shadow-lg border border-gray-100 overflow-hidden group hover:shadow-2xl transition-all duration-300" data-aos="fade-up" data-aos-delay="800">
+          <div class="relative h-48 bg-gray-100 flex items-center justify-center overflow-hidden">
+            <i class="ph-bold ph-layout text-6xl text-gray-300"></i>
+            <div class="absolute top-4 left-4">
+              <span class="bg-cyan-600 text-white text-[10px] font-bold px-2 py-1 rounded-md">PORTAL</span>
+            </div>
+          </div>
+          <div class="p-6">
+            <h3 class="text-xl font-bold text-gray-900 mb-2">Shop Floor Management</h3>
+            <p class="text-gray-500 text-sm mb-4 line-clamp-2">Portal terintegrasi untuk manajemen data operasional di lantai produksi.</p>
+            <button data-modal-target="modal-shopfloor" data-modal-toggle="modal-shopfloor" class="w-full py-2.5 bg-gray-50 text-indigo-600 font-semibold rounded-xl hover:bg-indigo-600 hover:text-white transition-all">
+              Lihat Detail
+            </button>
+          </div>
+        </div>
+
+        <!-- Project 9: Analisis WO -->
+        <div class="bg-white rounded-3xl shadow-lg border border-gray-100 overflow-hidden group hover:shadow-2xl transition-all duration-300" data-aos="fade-up" data-aos-delay="900">
+          <div class="relative h-48 bg-gray-100 flex items-center justify-center overflow-hidden">
+            <i class="ph-bold ph-presentation-chart text-6xl text-gray-300"></i>
+            <div class="absolute top-4 left-4">
+              <span class="bg-orange-600 text-white text-[10px] font-bold px-2 py-1 rounded-md">ANALYTICS</span>
+            </div>
+          </div>
+          <div class="p-6">
+            <h3 class="text-xl font-bold text-gray-900 mb-2">Dashboard Analisis WO</h3>
+            <p class="text-gray-500 text-sm mb-4 line-clamp-2">Sistem analisis Work Order untuk memantau pencapaian target produksi harian.</p>
+            <button data-modal-target="modal-wo" data-modal-toggle="modal-wo" class="w-full py-2.5 bg-gray-50 text-indigo-600 font-semibold rounded-xl hover:bg-indigo-600 hover:text-white transition-all">
+              Lihat Detail
+            </button>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Back Button -->
+      <div class="mt-16 text-center">
+        <a href="index.html#projects" class="inline-flex items-center gap-2 text-indigo-600 font-bold hover:gap-3 transition-all">
+          <i class="fas fa-arrow-left"></i> Kembali ke Portfolio Utama
+        </a>
+      </div>
+    </div>
+  </main>
+
+  <!-- Modals -->
+  <!-- Modal IGO -->
+  <div id="modal-igo" tabindex="-1" aria-hidden="true" class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full">
+    <div class="relative p-4 w-full max-w-4xl max-h-full">
+      <div class="relative bg-white rounded-3xl shadow overflow-hidden">
+        <div class="flex items-center justify-between p-6 border-b">
+          <h3 class="text-xl font-bold text-gray-900">Detail: Formation IGO Drying</h3>
+          <button type="button" class="text-gray-400 hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 inline-flex justify-center items-center" data-modal-hide="modal-igo">
+            <i class="fas fa-times"></i>
+          </button>
+        </div>
+        <div class="p-6 space-y-6 overflow-y-auto max-h-[70vh]">
+          <img src="assets/production_monitoring.png" class="w-full rounded-2xl shadow-lg mb-6">
+          <div class="prose prose-indigo max-w-none">
+            <h4 class="text-lg font-bold">Deskripsi Projek</h4>
+            <p class="text-gray-600">Sistem ini dirancang untuk menggantikan checksheet manual dalam proses pengeringan (drying) pada mesin IGO. Fitur utamanya mencakup:</p>
+            <ul class="list-disc pl-5 text-gray-600 space-y-2">
+              <li>Input data temperatur dan kelembaban secara digital.</li>
+              <li>Validasi data otomatis sesuai standar parameter produksi.</li>
+              <li>Dashboard monitoring status mesin untuk Group Leader.</li>
+              <li>Riwayat data yang terorganisir untuk kebutuhan audit kualitas.</li>
+            </ul>
+            <h4 class="text-lg font-bold mt-6">Teknologi yang Digunakan</h4>
+            <div class="flex gap-2">
+              <span class="px-3 py-1 bg-indigo-50 text-indigo-600 rounded-full text-xs font-bold">PHP CodeIgniter</span>
+              <span class="px-3 py-1 bg-blue-50 text-blue-600 rounded-full text-xs font-bold">MySQL</span>
+              <span class="px-3 py-1 bg-yellow-50 text-yellow-600 rounded-full text-xs font-bold">JavaScript</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal APD -->
+  <div id="modal-apd" tabindex="-1" aria-hidden="true" class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full">
+    <div class="relative p-4 w-full max-w-4xl max-h-full">
+      <div class="relative bg-white rounded-3xl shadow overflow-hidden">
+        <div class="flex items-center justify-between p-6 border-b">
+          <h3 class="text-xl font-bold text-gray-900">Detail: APD Monitoring Dashboard</h3>
+          <button type="button" class="text-gray-400 hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 inline-flex justify-center items-center" data-modal-hide="modal-apd">
+            <i class="fas fa-times"></i>
+          </button>
+        </div>
+        <div class="p-6 space-y-6 overflow-y-auto max-h-[70vh]">
+          <img src="assets/apd_dashboard.png" class="w-full rounded-2xl shadow-lg mb-6">
+          <div class="prose prose-indigo max-w-none">
+            <h4 class="text-lg font-bold">Deskripsi Projek</h4>
+            <p class="text-gray-600">Projek ini berfokus pada visualisasi data kepatuhan penggunaan Alat Pelindung Diri (APD) di lingkungan pabrik.</p>
+            <ul class="list-disc pl-5 text-gray-600 space-y-2">
+              <li>Visualisasi grafik kepatuhan per departemen menggunakan Chart.js.</li>
+              <li>Sistem alert untuk area dengan tingkat pelanggaran tinggi.</li>
+              <li>Penyederhanaan input data inspeksi harian.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal Henkaten -->
+  <div id="modal-henkaten" tabindex="-1" aria-hidden="true" class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full">
+    <div class="relative p-4 w-full max-w-4xl max-h-full">
+      <div class="relative bg-white rounded-3xl shadow overflow-hidden">
+        <div class="flex items-center justify-between p-6 border-b">
+          <h3 class="text-xl font-bold text-gray-900">Detail: Henkaten Board</h3>
+          <button type="button" class="text-gray-400 hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 inline-flex justify-center items-center" data-modal-hide="modal-henkaten">
+            <i class="fas fa-times"></i>
+          </button>
+        </div>
+        <div class="p-6 space-y-6 overflow-y-auto max-h-[70vh]">
+          <div class="w-full aspect-video bg-gray-100 rounded-2xl flex items-center justify-center border-2 border-dashed border-gray-300 mb-6 group">
+             <p class="text-gray-400 font-medium group-hover:text-indigo-500 transition-colors">Tarik Gambar Anda ke Sini</p>
+          </div>
+          <div class="prose prose-indigo max-w-none">
+            <h4 class="text-lg font-bold">Deskripsi Projek</h4>
+            <p class="text-gray-600">Sistem Henkaten Board digital untuk mencatat dan memantau perubahan 4M (Man, Machine, Material, Method) di lantai produksi secara real-time.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal Interval Pasting -->
+  <div id="modal-pasting" tabindex="-1" aria-hidden="true" class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full">
+    <div class="relative p-4 w-full max-w-4xl max-h-full">
+      <div class="relative bg-white rounded-3xl shadow overflow-hidden">
+        <div class="flex items-center justify-between p-6 border-b">
+          <h3 class="text-xl font-bold text-gray-900">Detail: Interval Pasting</h3>
+          <button type="button" class="text-gray-400 hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 inline-flex justify-center items-center" data-modal-hide="modal-pasting">
+            <i class="fas fa-times"></i>
+          </button>
+        </div>
+        <div class="p-6 space-y-6 overflow-y-auto max-h-[70vh]">
+          <div class="w-full aspect-video bg-gray-100 rounded-2xl flex items-center justify-center border-2 border-dashed border-gray-300 mb-6 group">
+             <p class="text-gray-400 font-medium group-hover:text-indigo-500 transition-colors">Tarik Gambar Anda ke Sini</p>
+          </div>
+          <div class="prose prose-indigo max-w-none">
+            <h4 class="text-lg font-bold">Deskripsi Projek</h4>
+            <p class="text-gray-600">Sistem monitoring interval waktu pada proses pasting untuk memastikan konsistensi output dan efisiensi mesin di area produksi.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal Checksheet Formation -->
+  <div id="modal-checksheet" tabindex="-1" aria-hidden="true" class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full">
+    <div class="relative p-4 w-full max-w-4xl max-h-full">
+      <div class="relative bg-white rounded-3xl shadow overflow-hidden">
+        <div class="flex items-center justify-between p-6 border-b">
+          <h3 class="text-xl font-bold text-gray-900">Detail: Checksheet Formation</h3>
+          <button type="button" class="text-gray-400 hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 inline-flex justify-center items-center" data-modal-hide="modal-checksheet">
+            <i class="fas fa-times"></i>
+          </button>
+        </div>
+        <div class="p-6 space-y-6 overflow-y-auto max-h-[70vh]">
+          <div class="w-full aspect-video bg-gray-100 rounded-2xl flex items-center justify-center border-2 border-dashed border-gray-300 mb-6 group">
+             <p class="text-gray-400 font-medium group-hover:text-indigo-500 transition-colors">Tarik Gambar Anda ke Sini</p>
+          </div>
+          <div class="prose prose-indigo max-w-none">
+            <h4 class="text-lg font-bold">Deskripsi Projek</h4>
+            <p class="text-gray-600">Digitalisasi checksheet formation untuk mempercepat proses input data, mengurangi penggunaan kertas, dan mempermudah rekapitulasi data harian.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal Monitoring Formation -->
+  <div id="modal-monitoring-form" tabindex="-1" aria-hidden="true" class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full">
+    <div class="relative p-4 w-full max-w-4xl max-h-full">
+      <div class="relative bg-white rounded-3xl shadow overflow-hidden">
+        <div class="flex items-center justify-between p-6 border-b">
+          <h3 class="text-xl font-bold text-gray-900">Detail: Dashboard Monitoring Formation</h3>
+          <button type="button" class="text-gray-400 hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 inline-flex justify-center items-center" data-modal-hide="modal-monitoring-form">
+            <i class="fas fa-times"></i>
+          </button>
+        </div>
+        <div class="p-6 space-y-6 overflow-y-auto max-h-[70vh]">
+          <div class="w-full aspect-video bg-gray-100 rounded-2xl flex items-center justify-center border-2 border-dashed border-gray-300 mb-6 group">
+             <p class="text-gray-400 font-medium group-hover:text-indigo-500 transition-colors">Tarik Gambar Anda ke Sini</p>
+          </div>
+          <div class="prose prose-indigo max-w-none">
+            <h4 class="text-lg font-bold">Deskripsi Projek</h4>
+            <p class="text-gray-600">Dashboard visualisasi terpusat untuk memantau seluruh proses charging baterai, mendeteksi anomali secara dini, dan menampilkan performa output formation.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal Shop Floor -->
+  <div id="modal-shopfloor" tabindex="-1" aria-hidden="true" class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full">
+    <div class="relative p-4 w-full max-w-4xl max-h-full">
+      <div class="relative bg-white rounded-3xl shadow overflow-hidden">
+        <div class="flex items-center justify-between p-6 border-b">
+          <h3 class="text-xl font-bold text-gray-900">Detail: Shop Floor Management</h3>
+          <button type="button" class="text-gray-400 hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 inline-flex justify-center items-center" data-modal-hide="modal-shopfloor">
+            <i class="fas fa-times"></i>
+          </button>
+        </div>
+        <div class="p-6 space-y-6 overflow-y-auto max-h-[70vh]">
+          <div class="w-full aspect-video bg-gray-100 rounded-2xl flex items-center justify-center border-2 border-dashed border-gray-300 mb-6 group">
+             <p class="text-gray-400 font-medium group-hover:text-indigo-500 transition-colors">Tarik Gambar Anda ke Sini</p>
+          </div>
+          <div class="prose prose-indigo max-w-none">
+            <h4 class="text-lg font-bold">Deskripsi Projek</h4>
+            <p class="text-gray-600">Portal manajemen operasional lantai produksi yang mengintegrasikan berbagai modul pelaporan dan monitoring dalam satu platform.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal WO -->
+  <div id="modal-wo" tabindex="-1" aria-hidden="true" class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full">
+    <div class="relative p-4 w-full max-w-4xl max-h-full">
+      <div class="relative bg-white rounded-3xl shadow overflow-hidden">
+        <div class="flex items-center justify-between p-6 border-b">
+          <h3 class="text-xl font-bold text-gray-900">Detail: Dashboard Analisis WO</h3>
+          <button type="button" class="text-gray-400 hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 inline-flex justify-center items-center" data-modal-hide="modal-wo">
+            <i class="fas fa-times"></i>
+          </button>
+        </div>
+        <div class="p-6 space-y-6 overflow-y-auto max-h-[70vh]">
+          <div class="w-full aspect-video bg-gray-100 rounded-2xl flex items-center justify-center border-2 border-dashed border-gray-300 mb-6 group">
+             <p class="text-gray-400 font-medium group-hover:text-indigo-500 transition-colors">Tarik Gambar Anda ke Sini</p>
+          </div>
+          <div class="prose prose-indigo max-w-none">
+            <h4 class="text-lg font-bold">Deskripsi Projek</h4>
+            <p class="text-gray-600">Dashboard analisis data Work Order (WO) untuk melacak efisiensi kerja dan pencapaian target produksi terhadap rencana yang telah ditetapkan.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <div id="footer"></div>
+
+  <!-- Scripts -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="main.js"></script>
+</body>
+
+</html>
