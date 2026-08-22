@@ -1,0 +1,14 @@
+[build]
+  publish = "."
+  command = ""
+
+[[redirects]]
+  from = "/internship"
+  to = "/internship.html"
+  status = 200
+
+[[redirects]]
+  from = "/internship-bulog"
+  to = "/internship-bulog.html"
+  status = 200
+
