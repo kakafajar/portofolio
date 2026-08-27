@@ -20,7 +20,7 @@ const sectionMappings = [
   { id: "hero", file: "hero.html" },
   { id: "about", file: "about.html" },
   { id: "keahlian", file: "keahlian.html" },
-  { id: "career", file: "career.html" },
+  { id: "career", file: "career.html", callback: initLightbox },
   { id: "projects", file: "projects.html" },
   { id: "sertifikat", file: "sertifikat.html", callback: initSertifikat },
   { id: "contact", file: "contact.html", callback: initContact },
@@ -59,6 +59,71 @@ function initNavbar() {
   if (mobileLinks) {
     mobileLinks.forEach(link => link.addEventListener("click", toggleSidebar));
   }
+}
+
+function initLightbox() {
+  const lightbox = document.getElementById("image-lightbox");
+  const lightboxImg = document.getElementById("lightbox-img");
+  const lightboxCaption = document.getElementById("lightbox-caption");
+  const closeBtn = document.getElementById("close-lightbox");
+
+  if (!lightbox || !lightboxImg) return;
+
+  const closeLightbox = () => {
+    lightbox.classList.add("opacity-0");
+    if (lightboxImg) lightboxImg.classList.add("scale-95");
+    setTimeout(() => {
+      lightbox.classList.add("hidden");
+      lightboxImg.src = "";
+    }, 200);
+  };
+
+  const openLightbox = (src, alt) => {
+    lightboxImg.src = src;
+    lightboxImg.alt = alt || "Preview Foto";
+    if (lightboxCaption) {
+      if (alt && alt.trim()) {
+        lightboxCaption.textContent = alt;
+        lightboxCaption.classList.remove("hidden");
+      } else {
+        lightboxCaption.classList.add("hidden");
+      }
+    }
+    lightbox.classList.remove("hidden");
+    setTimeout(() => {
+      lightbox.classList.remove("opacity-0");
+      if (lightboxImg) lightboxImg.classList.remove("scale-95");
+    }, 10);
+  };
+
+  const careerSection = document.getElementById("career");
+  if (careerSection) {
+    careerSection.addEventListener("click", (e) => {
+      // Do not trigger preview if clicking links or action buttons
+      if (e.target.closest("a") || e.target.closest("button")) return;
+
+      const targetImg = e.target.closest("img") || (e.target.closest(".relative") ? e.target.closest(".relative").querySelector("img") : null);
+      if (targetImg && targetImg.src) {
+        openLightbox(targetImg.src, targetImg.alt);
+      }
+    });
+  }
+
+  if (closeBtn) {
+    closeBtn.addEventListener("click", closeLightbox);
+  }
+
+  lightbox.addEventListener("click", (e) => {
+    if (e.target === lightbox || e.target.id === "image-lightbox") {
+      closeLightbox();
+    }
+  });
+
+  document.addEventListener("keydown", (e) => {
+    if (e.key === "Escape" && !lightbox.classList.contains("hidden")) {
+      closeLightbox();
+    }
+  });
 }
 
 function initSertifikat() {
