@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+  <!-- Basic Meta -->
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Projek KKN Desa Sumbersari - Pilah Sampah Adventure | Fajar Herlambang</title>
+  <meta name="description" content="Dokumentasi dan showcase Projek KKN Desa Sumbersari: Game Edukasi Pilah Sampah Adventure oleh Fajar Herlambang.">
+
+  <!-- Tailwind & UI Libraries -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js" defer></script>
+  <script src="https://unpkg.com/@phosphor-icons/web" defer></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .glass-card {
+      background: rgba(255, 255, 255, 0.85);
+      backdrop-filter: blur(10px);
+      border: 1px solid rgba(255, 255, 255, 0.3);
+    }
+  </style>
+</head>
+
+<body class="bg-gray-50 text-gray-900">
+
+  <!-- Navbar Container -->
+  <div id="navbar"></div>
+
+  <!-- Main Content -->
+  <main class="pt-24 pb-20">
+    <div class="container mx-auto px-6">
+      
+      <!-- Breadcrumb & Header -->
+      <div class="mb-12" data-aos="fade-down">
+        <nav class="flex mb-4" aria-label="Breadcrumb">
+          <ol class="inline-flex items-center space-x-1 md:space-x-3">
+            <li class="inline-flex items-center">
+              <a href="index.html" class="inline-flex items-center text-sm font-medium text-gray-700 hover:text-emerald-600 transition-colors">
+                <i class="ph-bold ph-house-line mr-2"></i> Home
+              </a>
+            </li>
+            <li>
+              <div class="flex items-center">
+                <i class="fas fa-chevron-right text-gray-400 text-xs mx-2"></i>
+                <a href="index.html#projects" class="text-sm font-medium text-gray-700 hover:text-emerald-600 transition-colors">Projects</a>
+              </div>
+            </li>
+            <li>
+              <div class="flex items-center">
+                <i class="fas fa-chevron-right text-gray-400 text-xs mx-2"></i>
+                <span class="text-sm font-medium text-emerald-600">KKN Sumbersari - Pilah Sampah Adventure</span>
+              </div>
+            </li>
+          </ol>
+        </nav>
+        
+        <div class="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-6">
+          <div>
+            <span class="inline-flex items-center gap-1.5 px-3 py-1 bg-emerald-100 text-emerald-800 rounded-full text-xs font-bold mb-3">
+              <i class="ph-bold ph-plant"></i> KKN PROGRAM UNGGULAN
+            </span>
+            <h1 class="text-3xl md:text-5xl font-extrabold text-gray-900 mb-4 leading-tight">
+              Pilah Sampah <span class="text-transparent bg-clip-text bg-gradient-to-r from-emerald-600 via-teal-600 to-cyan-600">Adventure</span>
+            </h1>
+            <p class="text-gray-600 max-w-3xl text-base md:text-lg leading-relaxed">
+              Aplikasi web game edukasi pemilahan sampah interaktif yang dikembangkan sebagai program kerja utama selama 
+              <strong>Kuliah Kerja Nyata (KKN) di Desa Sumbersari</strong>. Dirancang untuk meningkatkan kesadaran lingkungan 
+              anak-anak dan warga desa melalui pengalaman bermain yang seru dan edukatif.
+            </p>
+          </div>
+          <div class="flex flex-wrap gap-2 lg:flex-col lg:items-end">
+            <span class="px-3 py-1.5 bg-emerald-50 border border-emerald-200 text-emerald-700 rounded-lg text-xs font-semibold flex items-center gap-2">
+              <i class="fas fa-calendar-alt"></i> Juli - Agustus 2026
+            </span>
+            <span class="px-3 py-1.5 bg-teal-50 border border-teal-200 text-teal-700 rounded-lg text-xs font-semibold flex items-center gap-2">
+              <i class="fas fa-map-marker-alt"></i> Desa Sumbersari
+            </span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Highlights / Core Sections Grid -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
+        
+        <!-- Showcase 1: Home Screen -->
+        <div class="bg-white rounded-3xl shadow-lg border border-gray-100 overflow-hidden group hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1.5 flex flex-col h-full" data-aos="fade-up" data-aos-delay="100">
+          <div class="relative h-56 bg-gradient-to-br from-emerald-100 to-teal-50 overflow-hidden cursor-pointer" data-modal-target="modal-kkn-home" data-modal-toggle="modal-kkn-home">
+            <img src="assets/kkn project/Home.png" alt="Halaman Utama Game Pilah Sampah" class="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-500">
+            <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-4">
+              <span class="text-white text-xs font-bold flex items-center gap-2">
+                <i class="fas fa-search-plus"></i> Perbesar Tampilan Home
+              </span>
+            </div>
+            <div class="absolute top-4 left-4">
+              <span class="bg-emerald-600 text-white text-[10px] font-black px-2.5 py-1 rounded-md shadow-md uppercase tracking-wider">HOME INTERFACE</span>
+            </div>
+          </div>
+          <div class="p-6 flex flex-col flex-grow">
+            <h3 class="text-xl font-bold text-gray-900 mb-2 group-hover:text-emerald-600 transition-colors">Tampilan Utama (Home)</h3>
+            <p class="text-gray-500 text-sm mb-4 line-clamp-3 leading-relaxed">
+              Interface beranda game dengan latar belakang interaktif, tombol navigasi "Mulai Bermain", modal Pengaturan Game, serta fitur Papan Peringkat (Leaderboard).
+            </p>
+            <div class="mt-auto pt-4 border-t border-gray-100 flex items-center justify-between">
+              <span class="text-xs font-semibold text-emerald-600 flex items-center gap-1">
+                <i class="fas fa-desktop"></i> UI/UX Design & Audio
+              </span>
+              <button data-modal-target="modal-kkn-home" data-modal-toggle="modal-kkn-home" class="px-4 py-2 bg-emerald-50 text-emerald-700 hover:bg-emerald-600 hover:text-white text-xs font-bold rounded-xl transition-all">
+                Lihat Detail <i class="fas fa-arrow-right ml-1"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Showcase 2: Mode Permainan -->
+        <div class="bg-white rounded-3xl shadow-lg border border-gray-100 overflow-hidden group hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1.5 flex flex-col h-full" data-aos="fade-up" data-aos-delay="200">
+          <div class="relative h-56 bg-gradient-to-br from-emerald-100 to-teal-50 overflow-hidden cursor-pointer" data-modal-target="modal-kkn-mode" data-modal-toggle="modal-kkn-mode">
+            <img src="assets/kkn project/Mode.png" alt="Pemilihan Mode Permainan" class="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-500">
+            <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-4">
+              <span class="text-white text-xs font-bold flex items-center gap-2">
+                <i class="fas fa-search-plus"></i> Perbesar Tampilan Mode
+              </span>
+            </div>
+            <div class="absolute top-4 left-4">
+              <span class="bg-teal-600 text-white text-[10px] font-black px-2.5 py-1 rounded-md shadow-md uppercase tracking-wider">GAME MODES</span>
+            </div>
+          </div>
+          <div class="p-6 flex flex-col flex-grow">
+            <h3 class="text-xl font-bold text-gray-900 mb-2 group-hover:text-teal-600 transition-colors">Pemilihan Mode Permainan</h3>
+            <p class="text-gray-500 text-sm mb-4 line-clamp-3 leading-relaxed">
+              Menu interaktif untuk memilih 3 mode tantangan: Mode Geser & Lepas (Drag & Drop), Mode Pilihan Ganda (Kuis), dan Mode Sampah Berserakan (Field Sorting).
+            </p>
+            <div class="mt-auto pt-4 border-t border-gray-100 flex items-center justify-between">
+              <span class="text-xs font-semibold text-teal-600 flex items-center gap-1">
+                <i class="fas fa-gamepad"></i> 3 Mode Edukatif
+              </span>
+              <button data-modal-target="modal-kkn-mode" data-modal-toggle="modal-kkn-mode" class="px-4 py-2 bg-teal-50 text-teal-700 hover:bg-teal-600 hover:text-white text-xs font-bold rounded-xl transition-all">
+                Lihat Detail <i class="fas fa-arrow-right ml-1"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Showcase 3: Gameplay Arena -->
+        <div class="bg-white rounded-3xl shadow-lg border border-gray-100 overflow-hidden group hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1.5 flex flex-col h-full" data-aos="fade-up" data-aos-delay="300">
+          <div class="relative h-56 bg-gradient-to-br from-emerald-100 to-teal-50 overflow-hidden cursor-pointer" data-modal-target="modal-kkn-game" data-modal-toggle="modal-kkn-game">
+            <img src="assets/kkn project/Game.png" alt="Arena Permainan Pilah Sampah" class="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-500">
+            <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-4">
+              <span class="text-white text-xs font-bold flex items-center gap-2">
+                <i class="fas fa-search-plus"></i> Perbesar Tampilan Gameplay
+              </span>
+            </div>
+            <div class="absolute top-4 left-4">
+              <span class="bg-cyan-600 text-white text-[10px] font-black px-2.5 py-1 rounded-md shadow-md uppercase tracking-wider">GAMEPLAY ARENA</span>
+            </div>
+          </div>
+          <div class="p-6 flex flex-col flex-grow">
+            <h3 class="text-xl font-bold text-gray-900 mb-2 group-hover:text-cyan-600 transition-colors">Arena Gameplay Permainan</h3>
+            <p class="text-gray-500 text-sm mb-4 line-clamp-3 leading-relaxed">
+              Area pemilahan sampah secara langsung dengan perhitungan timer, skor real-time, efek suara ketika sampah benar/salah, serta kategorisasi sampah Organik, Anorganik, dan B3.
+            </p>
+            <div class="mt-auto pt-4 border-t border-gray-100 flex items-center justify-between">
+              <span class="text-xs font-semibold text-cyan-600 flex items-center gap-1">
+                <i class="fas fa-bullseye"></i> Real-time Sorting
+              </span>
+              <button data-modal-target="modal-kkn-game" data-modal-toggle="modal-kkn-game" class="px-4 py-2 bg-cyan-50 text-cyan-700 hover:bg-cyan-600 hover:text-white text-xs font-bold rounded-xl transition-all">
+                Lihat Detail <i class="fas fa-arrow-right ml-1"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- KKN Activity Documentation Banner Section -->
+      <div class="bg-gradient-to-r from-emerald-900 via-teal-900 to-slate-900 rounded-3xl shadow-xl overflow-hidden p-8 md:p-12 text-white mb-16" data-aos="fade-up">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+          <div class="lg:col-span-7">
+            <span class="inline-block px-3 py-1 bg-emerald-500/20 text-emerald-300 rounded-full text-xs font-bold mb-4 border border-emerald-500/30">
+              <i class="fas fa-users-cog mr-1"></i> Pengabdian Masyarakat
+            </span>
+            <h2 class="text-2xl md:text-4xl font-bold mb-4 leading-tight">
+              Sosialisasi & Edukasi Sampah di Desa Sumbersari
+            </h2>
+            <p class="text-emerald-100/80 text-sm md:text-base leading-relaxed mb-6">
+              Projek ini tidak hanya berupa kode aplikasi, namun diimplementasikan secara langsung melalui sosialisasi 
+              dan pelatihan pemilahan sampah kepada anak-anak sekolah dan masyarakat Desa Sumbersari. Aplikasi game ini menjadi sarana interaktif utama agar edukasi kebersihan dapat disampaikan secara menyenangkan.
+            </p>
+            <div class="flex flex-wrap gap-4">
+              <button data-modal-target="modal-kkn-doc" data-modal-toggle="modal-kkn-doc" class="px-6 py-3 bg-emerald-500 hover:bg-emerald-400 text-slate-950 font-bold rounded-2xl transition-all shadow-lg flex items-center gap-2">
+                <i class="fas fa-images"></i> Lihat Dokumentasi Kegiatan
+              </button>
+            </div>
+          </div>
+          <div class="lg:col-span-5 relative group cursor-pointer" data-modal-target="modal-kkn-doc" data-modal-toggle="modal-kkn-doc">
+            <div class="relative rounded-2xl overflow-hidden shadow-2xl border-2 border-emerald-500/30">
+              <img src="assets/kkn project/KKN SUMBERSARI.jpg" alt="Dokumentasi KKN Desa Sumbersari" class="w-full h-64 object-cover transform group-hover:scale-105 transition-transform duration-500">
+              <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                <span class="px-4 py-2 bg-white/20 backdrop-blur-md rounded-full text-xs font-bold text-white border border-white/30">
+                  <i class="fas fa-expand mr-1"></i> Lihat Foto Kegiatan
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Navigation Back Button -->
+      <div class="text-center">
+        <a href="index.html#projects" class="inline-flex items-center gap-2 px-8 py-3 bg-white text-emerald-700 border-2 border-emerald-200 rounded-full font-bold hover:bg-emerald-50 hover:border-emerald-300 transition-all duration-300 shadow-sm hover:shadow-md">
+          <i class="fas fa-arrow-left"></i> Kembali ke Portfolio Utama
+        </a>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- MODALS SECTION -->
+
+  <!-- Modal 1: Home Interface -->
+  <div id="modal-kkn-home" tabindex="-1" aria-hidden="true" class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full">
+    <div class="relative p-4 w-full max-w-4xl max-h-full">
+      <div class="relative bg-white rounded-3xl shadow-2xl overflow-hidden border border-gray-100">
+        <div class="flex items-center justify-between p-6 border-b border-gray-100 bg-gray-50/50">
+          <div>
+            <span class="text-xs font-bold text-emerald-600 uppercase tracking-wider">MODUL UI & DASHBOARD</span>
+            <h3 class="text-xl font-bold text-gray-900">Tampilan Utama (Home Interface)</h3>
+          </div>
+          <button type="button" class="text-gray-400 hover:bg-gray-200 hover:text-gray-900 rounded-full text-sm w-9 h-9 inline-flex justify-center items-center transition-colors" data-modal-hide="modal-kkn-home">
+            <i class="fas fa-times text-base"></i>
+          </button>
+        </div>
+        <div class="p-6 space-y-6 overflow-y-auto max-h-[75vh]">
+          <div class="rounded-2xl overflow-hidden shadow-md border border-gray-200">
+            <img src="assets/kkn project/Home.png" alt="Detail Home Game Pilah Sampah" class="w-full object-contain bg-gray-100">
+          </div>
+          
+          <div class="space-y-4">
+            <h4 class="text-lg font-bold text-gray-900 flex items-center gap-2">
+              <i class="fas fa-info-circle text-emerald-600"></i> Deskripsi Modul Home
+            </h4>
+            <p class="text-gray-600 leading-relaxed text-sm">
+              Halaman awal game dirancang cerah dan ramah anak agar dapat langsung menarik minat pemain. Beranda ini menyediakan akses mudah ke semua fitur utama game seperti memilih mode permainan, mengonfigurasi timer dan audio, serta melihat papan skor tertinggi.
+            </p>
+
+            <h4 class="text-lg font-bold text-gray-900 flex items-center gap-2 pt-2">
+              <i class="fas fa-list-check text-emerald-600"></i> Fitur & Komponen Utama
+            </h4>
+            <ul class="grid grid-cols-1 md:grid-cols-2 gap-3 text-sm text-gray-600">
+              <li class="p-3 bg-emerald-50/60 rounded-xl border border-emerald-100/80 flex items-start gap-2">
+                <i class="fas fa-play-circle text-emerald-600 mt-1"></i>
+                <span><strong>Tombol Mainkan:</strong> Membuka modal navigasi pemilihan mode permainan.</span>
+              </li>
+              <li class="p-3 bg-emerald-50/60 rounded-xl border border-emerald-100/80 flex items-start gap-2">
+                <i class="fas fa-trophy text-emerald-600 mt-1"></i>
+                <span><strong>Leaderboard Interaktif:</strong> Menampilkan peringkat skor tertinggi berdasarkan mode permainan yang tersimpan di LocalStorage.</span>
+              </li>
+              <li class="p-3 bg-emerald-50/60 rounded-xl border border-emerald-100/80 flex items-start gap-2">
+                <i class="fas fa-sliders-h text-emerald-600 mt-1"></i>
+                <span><strong>Settings Modal:</strong> Opsi penyesuaian durasi waktu timer (misal: 30s, 60s, 90s) dan pengaktifan/penonaktifan suara game.</span>
+              </li>
+              <li class="p-3 bg-emerald-50/60 rounded-xl border border-emerald-100/80 flex items-start gap-2">
+                <i class="fas fa-book-open text-emerald-600 mt-1"></i>
+                <span><strong>Panduan Edukasi:</strong> Edukasi dasar perbedaan jenis sampah (Organik, Anorganik, B3) sebelum memulai.</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 2: Mode Permainan -->
+  <div id="modal-kkn-mode" tabindex="-1" aria-hidden="true" class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full">
+    <div class="relative p-4 w-full max-w-4xl max-h-full">
+      <div class="relative bg-white rounded-3xl shadow-2xl overflow-hidden border border-gray-100">
+        <div class="flex items-center justify-between p-6 border-b border-gray-100 bg-gray-50/50">
+          <div>
+            <span class="text-xs font-bold text-teal-600 uppercase tracking-wider">MODUL GAME LOGIC</span>
+            <h3 class="text-xl font-bold text-gray-900">Pemilihan Mode Permainan</h3>
+          </div>
+          <button type="button" class="text-gray-400 hover:bg-gray-200 hover:text-gray-900 rounded-full text-sm w-9 h-9 inline-flex justify-center items-center transition-colors" data-modal-hide="modal-kkn-mode">
+            <i class="fas fa-times text-base"></i>
+          </button>
+        </div>
+        <div class="p-6 space-y-6 overflow-y-auto max-h-[75vh]">
+          <div class="rounded-2xl overflow-hidden shadow-md border border-gray-200">
+            <img src="assets/kkn project/Mode.png" alt="Detail Mode Game Pilah Sampah" class="w-full object-contain bg-gray-100">
+          </div>
+          
+          <div class="space-y-4">
+            <h4 class="text-lg font-bold text-gray-900 flex items-center gap-2">
+              <i class="fas fa-gamepad text-teal-600"></i> Penjelasan Mode Permainan
+            </h4>
+            <p class="text-gray-600 leading-relaxed text-sm">
+              Untuk memberikan variasi dan menjaga ketertarikan pemain, game ini menyediakan 3 mode permainan dengan gaya interaksi dan tantangan yang berbeda:
+            </p>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-4 text-sm">
+              <div class="p-4 bg-teal-50/50 rounded-2xl border border-teal-100">
+                <h5 class="font-bold text-teal-800 mb-2 flex items-center gap-2">
+                  <i class="fas fa-hand-pointer text-teal-600"></i> Mode Geser & Lepas
+                </h5>
+                <p class="text-gray-600 text-xs leading-relaxed">
+                  Pemain menyeret (drag) item sampah ke tempat sampah yang sesuai (Organik/Anorganik/B3) secara manual.
+                </p>
+              </div>
+
+              <div class="p-4 bg-teal-50/50 rounded-2xl border border-teal-100">
+                <h5 class="font-bold text-teal-800 mb-2 flex items-center gap-2">
+                  <i class="fas fa-list-ol text-teal-600"></i> Mode Pilihan Ganda
+                </h5>
+                <p class="text-gray-600 text-xs leading-relaxed">
+                  Kuis pertanyaan cepat dengan opsi pilihan tempat sampah yang menguji kecepatan berpikir dan hafalan kategori sampah.
+                </p>
+              </div>
+
+              <div class="p-4 bg-teal-50/50 rounded-2xl border border-teal-100">
+                <h5 class="font-bold text-teal-800 mb-2 flex items-center gap-2">
+                  <i class="fas fa-broom text-teal-600"></i> Sampah Berserakan
+                </h5>
+                <p class="text-gray-600 text-xs leading-relaxed">
+                  Beberapa jenis sampah muncul secara acak di area lapangan hijau dan pemain harus memilahnya sebelum waktu habis.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 3: Gameplay Arena -->
+  <div id="modal-kkn-game" tabindex="-1" aria-hidden="true" class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full">
+    <div class="relative p-4 w-full max-w-4xl max-h-full">
+      <div class="relative bg-white rounded-3xl shadow-2xl overflow-hidden border border-gray-100">
+        <div class="flex items-center justify-between p-6 border-b border-gray-100 bg-gray-50/50">
+          <div>
+            <span class="text-xs font-bold text-cyan-600 uppercase tracking-wider">MODUL GAMEPLAY ENGINE</span>
+            <h3 class="text-xl font-bold text-gray-900">Arena Gameplay Permainan</h3>
+          </div>
+          <button type="button" class="text-gray-400 hover:bg-gray-200 hover:text-gray-900 rounded-full text-sm w-9 h-9 inline-flex justify-center items-center transition-colors" data-modal-hide="modal-kkn-game">
+            <i class="fas fa-times text-base"></i>
+          </button>
+        </div>
+        <div class="p-6 space-y-6 overflow-y-auto max-h-[75vh]">
+          <div class="rounded-2xl overflow-hidden shadow-md border border-gray-200">
+            <img src="assets/kkn project/Game.png" alt="Detail Arena Gameplay Pilah Sampah" class="w-full object-contain bg-gray-100">
+          </div>
+          
+          <div class="space-y-4">
+            <h4 class="text-lg font-bold text-gray-900 flex items-center gap-2">
+              <i class="fas fa-cogs text-cyan-600"></i> Mekanisme Game & Pengalaman Bermain
+            </h4>
+            <p class="text-gray-600 leading-relaxed text-sm">
+              Arena permainan didesain dengan feedback visual dan audio yang responsif. Ketika pemain memasukkan sampah ke tempat yang benar, skor bertambah dan efek suara positif diputar.
+            </p>
+
+            <h4 class="text-lg font-bold text-gray-900 flex items-center gap-2 pt-2">
+              <i class="fas fa-code text-cyan-600"></i> Spesifikasi Teknis Gameplay
+            </h4>
+            <ul class="list-disc pl-5 text-sm text-gray-600 space-y-2">
+              <li><strong>HTML5 Drag & Drop API / Touch Events:</strong> Memungkinkan kelancaran interaksi baik di perangkat Desktop (mouse) maupun Smartphone / Tablet (sentuhan jari).</li>
+              <li><strong>Dynamic Timer & Combo Streak:</strong> Sistem waktu mundur dengan multiplier bonus poin jika pemain berhasil memilah sampah secara beruntun tanpa kesalahan.</li>
+              <li><strong>Web Audio API:</strong> Sound effect unik untuk feedback benar, salah, dan game over.</li>
+              <li><strong>LocalStorage Persistence:</strong> Menyimpan skor akhir secara otomatis dan menampilkan ranking secara real-time.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 4: KKN Documentation -->
+  <div id="modal-kkn-doc" tabindex="-1" aria-hidden="true" class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full">
+    <div class="relative p-4 w-full max-w-4xl max-h-full">
+      <div class="relative bg-white rounded-3xl shadow-2xl overflow-hidden border border-gray-100">
+        <div class="flex items-center justify-between p-6 border-b border-gray-100 bg-gray-50/50">
+          <div>
+            <span class="text-xs font-bold text-emerald-600 uppercase tracking-wider">DOKUMENTASI KKN</span>
+            <h3 class="text-xl font-bold text-gray-900">Pengabdian Masyarakat KKN Desa Sumbersari</h3>
+          </div>
+          <button type="button" class="text-gray-400 hover:bg-gray-200 hover:text-gray-900 rounded-full text-sm w-9 h-9 inline-flex justify-center items-center transition-colors" data-modal-hide="modal-kkn-doc">
+            <i class="fas fa-times text-base"></i>
+          </button>
+        </div>
+        <div class="p-6 space-y-6 overflow-y-auto max-h-[75vh]">
+          <div class="rounded-2xl overflow-hidden shadow-md border border-gray-200">
+            <img src="assets/kkn project/KKN SUMBERSARI.jpg" alt="Foto Kegiatan KKN Sumbersari" class="w-full object-cover">
+          </div>
+          
+          <div class="space-y-4">
+            <h4 class="text-lg font-bold text-gray-900 flex items-center gap-2">
+              <i class="fas fa-hands-helping text-emerald-600"></i> Dampak & Keberlanjutan Program
+            </h4>
+            <p class="text-gray-600 leading-relaxed text-sm">
+              Program KKN di Desa Sumbersari menggabungkan solusi teknologi perangkat lunak dengan pendekatan sosial langsung. Aplikasi Pilah Sampah Adventure sukses diperkenalkan dalam sesi sosialisasi lingkungan desa, disambut antusias oleh anak-anak sekolah serta aparat desa.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer Container -->
+  <div id="footer"></div>
+
+  <!-- Scripts -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="main.js"></script>
+</body>
+
+</html>
