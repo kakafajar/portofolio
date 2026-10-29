@@ -1,296 +1,291 @@
-<section id="projects" class="py-20 bg-white">
-  <div class="container mx-auto px-6">
+<section id="projects" class="py-24 bg-[#0a0e17] relative overflow-hidden border-t border-slate-800/60">
+  <!-- Subtle Ambient Glow -->
+  <div class="absolute top-1/3 right-1/4 w-[32rem] h-[32rem] bg-indigo-600/10 rounded-full blur-3xl pointer-events-none"></div>
+
+  <div class="container mx-auto px-6 lg:px-16 relative z-10">
+
     <!-- Header Section -->
     <div class="text-center mb-16" data-aos="fade-up">
-      <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-        Portfolio & <span
-          class="text-transparent bg-clip-text bg-gradient-to-r from-indigo-600 to-purple-600">Projects</span>
+      <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-lg bg-indigo-950/70 border border-indigo-500/30 text-indigo-400 text-xs font-semibold tracking-wider uppercase mb-4">
+        FEATURED PROJECTS
+      </div>
+      <h2 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-white mb-4 tracking-tight">
+        Some of My Recent Work
       </h2>
-      <div class="w-20 h-1 bg-gradient-to-r from-indigo-600 to-purple-600 mx-auto rounded-full"></div>
-      <p class="mt-4 text-gray-600 max-w-2xl mx-auto">
-        Beberapa proyek unggulan yang telah saya kerjakan dengan sentuhan teknologi modern dan desain yang
-        user-friendly.
+      <p class="text-slate-400 max-w-2xl mx-auto text-sm sm:text-base leading-relaxed">
+        Koleksi karya sistem informasi, aplikasi bimbingan belajar, game edukasi, dan landing page modern yang dibangun dengan fokus pada performa dan solusi nyata.
       </p>
     </div>
 
-    <!-- Grid Container -->
+    <!-- Projects Grid Container (3 Columns) -->
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
 
-      <!-- Folder Project Card: PT CBI -->
-      <a href="internship.html"
-        class="group relative bg-gradient-to-br from-indigo-50 to-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 border-2 border-indigo-100 cursor-pointer"
-        data-aos="fade-up" data-aos-delay="50">
-        <!-- Folder Visual Effect -->
-        <div class="relative h-64 flex items-center justify-center bg-indigo-600 overflow-hidden">
-          <div class="absolute inset-0 opacity-20">
-            <div class="absolute top-0 left-0 w-full h-full bg-[url('https://www.transparenttextures.com/patterns/carbon-fibre.png')]"></div>
+      <!-- Project 01: Lomba Web - Rumah Belajar -->
+      <div class="group bg-[#111827] rounded-2xl overflow-hidden border border-slate-800 hover:border-indigo-500/50 shadow-xl transition-all duration-300 flex flex-col h-full transform hover:-translate-y-1.5" data-aos="fade-up" data-aos-delay="50">
+        <div class="relative h-56 bg-slate-900 overflow-hidden">
+          <img src="assets/lomba_Web/halaman utama.png" alt="Rumah Belajar MIPA" class="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-500">
+          <div class="absolute inset-0 bg-gradient-to-t from-[#111827] via-transparent to-transparent opacity-80"></div>
+          <!-- Number Badge -->
+          <div class="absolute top-4 left-4 bg-slate-900/90 backdrop-blur-md border border-slate-700/80 text-white font-mono text-xs font-bold px-2.5 py-1 rounded-lg">
+            01
           </div>
-          <!-- Stacked Card Effect -->
-          <div class="relative w-32 h-40 bg-white rounded-lg shadow-xl transform -rotate-6 translate-x-2 translate-y-2 opacity-50"></div>
-          <div class="absolute w-32 h-40 bg-white rounded-lg shadow-xl transform rotate-3 -translate-x-2 -translate-y-2 opacity-75"></div>
-          <div class="absolute w-32 h-40 bg-white rounded-lg shadow-2xl flex flex-col items-center justify-center border border-indigo-100">
-            <i class="ph-fill ph-folder-open text-6xl text-indigo-600"></i>
-            <span class="mt-2 text-xs font-bold text-indigo-600">OPEN FOLDER</span>
+          <!-- Category Badge -->
+          <div class="absolute top-4 right-4 bg-amber-500/90 text-slate-950 text-[10px] font-black px-2.5 py-1 rounded-md uppercase tracking-wider">
+            LOMBA WEB
           </div>
-          
-          <!-- Badge -->
-          <div class="absolute top-4 right-4 bg-yellow-400 text-indigo-900 text-[10px] font-black px-2 py-1 rounded-md shadow-sm">
+        </div>
+        <div class="p-6 flex flex-col flex-grow">
+          <span class="text-xs font-semibold text-amber-400 mb-2">EduTech MIPA &bull; Multi-Role</span>
+          <h3 class="text-xl font-bold text-white mb-2 group-hover:text-indigo-400 transition-colors">
+            Rumah Belajar MIPA Interaktif
+          </h3>
+          <p class="text-slate-400 text-sm mb-6 line-clamp-3 leading-relaxed">
+            Platform bimbingan belajar &amp; lab visual interaktif MIPA (SD, SMP, SMA) karya lomba web dengan multi-role dashboard (Admin, Guru, Siswa) dan gamifikasi XP.
+          </p>
+          <div class="mt-auto pt-4 border-t border-slate-800/80 flex items-center justify-between">
+            <a href="lomba-web.html" class="inline-flex items-center gap-1.5 text-indigo-400 hover:text-indigo-300 text-sm font-semibold transition-colors">
+              Buka Folder <i class="fas fa-arrow-up-right-from-square text-xs"></i>
+            </a>
+            <a href="https://project-insyfest.vercel.app/" target="_blank" rel="noopener noreferrer" class="px-3 py-1 bg-amber-500/20 hover:bg-amber-500/30 text-amber-300 text-xs font-bold rounded-lg border border-amber-500/30 transition-all flex items-center gap-1">
+              <i class="fas fa-globe text-[10px]"></i> Live Demo
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 02: NihongoLearn -->
+      <div class="group bg-[#111827] rounded-2xl overflow-hidden border border-slate-800 hover:border-indigo-500/50 shadow-xl transition-all duration-300 flex flex-col h-full transform hover:-translate-y-1.5" data-aos="fade-up" data-aos-delay="100">
+        <div class="relative h-56 bg-slate-900 overflow-hidden">
+          <img src="assets/Website Belajar Bahasa Jepang/Jepang.png" alt="NihongoLearn Hiragana" class="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-500">
+          <div class="absolute inset-0 bg-gradient-to-t from-[#111827] via-transparent to-transparent opacity-80"></div>
+          <div class="absolute top-4 left-4 bg-slate-900/90 backdrop-blur-md border border-slate-700/80 text-white font-mono text-xs font-bold px-2.5 py-1 rounded-lg">
+            02
+          </div>
+          <div class="absolute top-4 right-4 bg-rose-600 text-white text-[10px] font-black px-2.5 py-1 rounded-md uppercase tracking-wider">
+            EDUTECH JP
+          </div>
+        </div>
+        <div class="p-6 flex flex-col flex-grow">
+          <span class="text-xs font-semibold text-rose-400 mb-2">107 Aksara &bull; Audio Native</span>
+          <h3 class="text-xl font-bold text-white mb-2 group-hover:text-indigo-400 transition-colors">
+            Website Belajar Bahasa Jepang
+          </h3>
+          <p class="text-slate-400 text-sm mb-6 line-clamp-3 leading-relaxed">
+            Platform edukasi aksara Hiragana (Seion, Dakuon, Yoon) interaktif dengan integrasi audio pelafalan asli native speaker, dual mode tabel/flashcard, dan kuis.
+          </p>
+          <div class="mt-auto pt-4 border-t border-slate-800/80 flex items-center justify-between">
+            <a href="belajar-jepang.html" class="inline-flex items-center gap-1.5 text-indigo-400 hover:text-indigo-300 text-sm font-semibold transition-colors">
+              Buka Folder <i class="fas fa-arrow-up-right-from-square text-xs"></i>
+            </a>
+            <a href="https://website-belajar-bahasa-jepang.vercel.app/" target="_blank" rel="noopener noreferrer" class="px-3 py-1 bg-rose-500/20 hover:bg-rose-500/30 text-rose-300 text-xs font-bold rounded-lg border border-rose-500/30 transition-all flex items-center gap-1">
+              <i class="fas fa-globe text-[10px]"></i> Live Demo
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 03: PT Century Batteries Indonesia -->
+      <div class="group bg-[#111827] rounded-2xl overflow-hidden border border-slate-800 hover:border-indigo-500/50 shadow-xl transition-all duration-300 flex flex-col h-full transform hover:-translate-y-1.5" data-aos="fade-up" data-aos-delay="150">
+        <div class="relative h-56 bg-slate-900 overflow-hidden">
+          <img src="assets/cbi_internship2.jpg" alt="Magang PT CBI" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+          <div class="absolute inset-0 bg-gradient-to-t from-[#111827] via-transparent to-transparent opacity-80"></div>
+          <div class="absolute top-4 left-4 bg-slate-900/90 backdrop-blur-md border border-slate-700/80 text-white font-mono text-xs font-bold px-2.5 py-1 rounded-lg">
+            03
+          </div>
+          <div class="absolute top-4 right-4 bg-indigo-600 text-white text-[10px] font-black px-2.5 py-1 rounded-md uppercase tracking-wider">
             INTERNSHIP
           </div>
         </div>
-
-        <!-- Content Area -->
-        <div class="p-6">
-          <div class="flex items-center justify-between mb-3">
-            <span class="px-3 py-1 text-xs font-medium text-indigo-700 bg-indigo-100 rounded-full flex items-center gap-1">
-              <i class="ph-bold ph-stack"></i> 10+ Projects
-            </span>
-          </div>
-          <h3 class="text-xl font-bold text-gray-900 mb-2 group-hover:text-indigo-600 transition-colors">
-            Projek Magang PT CBI</h3>
-          <p class="text-gray-500 text-sm mb-4">Kumpulan sistem informasi dan dashboard monitoring produksi yang dikembangkan selama masa magang di PT Century Batteries Indonesia.</p>
-          <div class="flex items-center pt-4 border-t border-indigo-50 gap-3">
-            <span class="text-indigo-600 text-sm font-semibold flex items-center gap-2 group-hover:gap-3 transition-all">
-              Buka Folder <i class="fas fa-chevron-right text-xs"></i>
-            </span>
+        <div class="p-6 flex flex-col flex-grow">
+          <span class="text-xs font-semibold text-indigo-400 mb-2">Astra Otoparts &bull; 10+ Projects</span>
+          <h3 class="text-xl font-bold text-white mb-2 group-hover:text-indigo-400 transition-colors">
+            Projek Magang PT CBI
+          </h3>
+          <p class="text-slate-400 text-sm mb-6 line-clamp-3 leading-relaxed">
+            Kumpulan sistem informasi dan dashboard monitoring produksi real-time yang dikembangkan selama masa magang di PT Century Batteries Indonesia.
+          </p>
+          <div class="mt-auto pt-4 border-t border-slate-800/80 flex items-center justify-between">
+            <a href="internship.html" class="inline-flex items-center gap-1.5 text-indigo-400 hover:text-indigo-300 text-sm font-semibold transition-colors">
+              Buka Folder <i class="fas fa-arrow-up-right-from-square text-xs"></i>
+            </a>
+            <span class="text-xs font-mono text-slate-500">Shop Floor System</span>
           </div>
         </div>
-      </a>
+      </div>
 
-      <!-- Folder Project Card: Perum Bulog -->
-      <a href="internship-bulog.html"
-        class="group relative bg-gradient-to-br from-blue-50 to-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 border-2 border-blue-100 cursor-pointer"
-        data-aos="fade-up" data-aos-delay="75">
-        <!-- Folder Visual Effect -->
-        <div class="relative h-64 flex items-center justify-center bg-blue-600 overflow-hidden">
-          <div class="absolute inset-0 opacity-20">
-            <div class="absolute top-0 left-0 w-full h-full bg-[url('https://www.transparenttextures.com/patterns/carbon-fibre.png')]"></div>
+      <!-- Project 04: Perum Bulog -->
+      <div class="group bg-[#111827] rounded-2xl overflow-hidden border border-slate-800 hover:border-indigo-500/50 shadow-xl transition-all duration-300 flex flex-col h-full transform hover:-translate-y-1.5" data-aos="fade-up" data-aos-delay="200">
+        <div class="relative h-56 bg-slate-900 overflow-hidden">
+          <img src="assets/bulog_internship.jpg" alt="Magang Bulog" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+          <div class="absolute inset-0 bg-gradient-to-t from-[#111827] via-transparent to-transparent opacity-80"></div>
+          <div class="absolute top-4 left-4 bg-slate-900/90 backdrop-blur-md border border-slate-700/80 text-white font-mono text-xs font-bold px-2.5 py-1 rounded-lg">
+            04
           </div>
-          <!-- Stacked Card Effect -->
-          <div class="relative w-32 h-40 bg-white rounded-lg shadow-xl transform -rotate-6 translate-x-2 translate-y-2 opacity-50"></div>
-          <div class="absolute w-32 h-40 bg-white rounded-lg shadow-xl transform rotate-3 -translate-x-2 -translate-y-2 opacity-75"></div>
-          <div class="absolute w-32 h-40 bg-white rounded-lg shadow-2xl flex flex-col items-center justify-center border border-blue-100">
-            <i class="ph-fill ph-folder-open text-6xl text-blue-600"></i>
-            <span class="mt-2 text-xs font-bold text-blue-600">OPEN FOLDER</span>
-          </div>
-          
-          <!-- Badge -->
-          <div class="absolute top-4 right-4 bg-yellow-400 text-blue-950 text-[10px] font-black px-2 py-1 rounded-md shadow-sm">
-            INTERNSHIP
+          <div class="absolute top-4 right-4 bg-blue-600 text-white text-[10px] font-black px-2.5 py-1 rounded-md uppercase tracking-wider">
+            BULOG BUMN
           </div>
         </div>
-
-        <!-- Content Area -->
-        <div class="p-6">
-          <div class="flex items-center justify-between mb-3">
-            <span class="px-3 py-1 text-xs font-medium text-blue-700 bg-blue-100 rounded-full flex items-center gap-1">
-              <i class="ph-bold ph-stack"></i> Bulog Projects
-            </span>
-          </div>
-          <h3 class="text-xl font-bold text-gray-900 mb-2 group-hover:text-blue-600 transition-colors">
-            Projek Magang Perum Bulog</h3>
-          <p class="text-gray-500 text-sm mb-4">Sistem informasi pengadaan digital, pengelolaan data operasional, dan administrasi komoditi pangan di Perum Bulog Kancab Karawang.</p>
-          <div class="flex items-center pt-4 border-t border-blue-50 gap-3">
-            <span class="text-blue-600 text-sm font-semibold flex items-center gap-2 group-hover:gap-3 transition-all">
-              Buka Folder <i class="fas fa-chevron-right text-xs"></i>
-            </span>
+        <div class="p-6 flex flex-col flex-grow">
+          <span class="text-xs font-semibold text-blue-400 mb-2">Pengadaan &bull; Karawang</span>
+          <h3 class="text-xl font-bold text-white mb-2 group-hover:text-indigo-400 transition-colors">
+            Projek Magang Perum Bulog
+          </h3>
+          <p class="text-slate-400 text-sm mb-6 line-clamp-3 leading-relaxed">
+            Sistem informasi pengadaan digital, pengelolaan data operasional komoditi pangan, dan administrasi surat penawaran di Perum Bulog Kancab Karawang.
+          </p>
+          <div class="mt-auto pt-4 border-t border-slate-800/80 flex items-center justify-between">
+            <a href="internship-bulog.html" class="inline-flex items-center gap-1.5 text-indigo-400 hover:text-indigo-300 text-sm font-semibold transition-colors">
+              Buka Folder <i class="fas fa-arrow-up-right-from-square text-xs"></i>
+            </a>
+            <span class="text-xs font-mono text-slate-500">E-Procurement</span>
           </div>
         </div>
-      </a>
+      </div>
 
-      <!-- Folder Project Card: KKN Desa Sumbersari -->
-      <a href="kkn-project.html"
-        class="group relative bg-gradient-to-br from-emerald-50 to-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 border-2 border-emerald-100 cursor-pointer"
-        data-aos="fade-up" data-aos-delay="85">
-        <!-- Folder Visual Effect -->
-        <div class="relative h-64 flex items-center justify-center bg-emerald-600 overflow-hidden">
-          <div class="absolute inset-0 opacity-20">
-            <div class="absolute top-0 left-0 w-full h-full bg-[url('https://www.transparenttextures.com/patterns/carbon-fibre.png')]"></div>
+      <!-- Project 05: KKN Pilah Sampah Game -->
+      <div class="group bg-[#111827] rounded-2xl overflow-hidden border border-slate-800 hover:border-indigo-500/50 shadow-xl transition-all duration-300 flex flex-col h-full transform hover:-translate-y-1.5" data-aos="fade-up" data-aos-delay="250">
+        <div class="relative h-56 bg-slate-900 overflow-hidden">
+          <img src="assets/kkn project/Home.png" alt="KKN Game Pilah Sampah" class="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-500">
+          <div class="absolute inset-0 bg-gradient-to-t from-[#111827] via-transparent to-transparent opacity-80"></div>
+          <div class="absolute top-4 left-4 bg-slate-900/90 backdrop-blur-md border border-slate-700/80 text-white font-mono text-xs font-bold px-2.5 py-1 rounded-lg">
+            05
           </div>
-          <!-- Stacked Card Effect -->
-          <div class="relative w-32 h-40 bg-white rounded-lg shadow-xl transform -rotate-6 translate-x-2 translate-y-2 opacity-50"></div>
-          <div class="absolute w-32 h-40 bg-white rounded-lg shadow-xl transform rotate-3 -translate-x-2 -translate-y-2 opacity-75"></div>
-          <div class="absolute w-32 h-40 bg-white rounded-lg shadow-2xl flex flex-col items-center justify-center border border-emerald-100">
-            <i class="ph-fill ph-folder-open text-6xl text-emerald-600"></i>
-            <span class="mt-2 text-xs font-bold text-emerald-600">OPEN FOLDER</span>
-          </div>
-          
-          <!-- Badge -->
-          <div class="absolute top-4 right-4 bg-yellow-400 text-emerald-950 text-[10px] font-black px-2 py-1 rounded-md shadow-sm">
+          <div class="absolute top-4 right-4 bg-emerald-600 text-white text-[10px] font-black px-2.5 py-1 rounded-md uppercase tracking-wider">
             KKN PROJECT
           </div>
         </div>
-
-        <!-- Content Area -->
-        <div class="p-6">
-          <div class="flex items-center justify-between mb-3">
-            <span class="px-3 py-1 text-xs font-medium text-emerald-700 bg-emerald-100 rounded-full flex items-center gap-1">
-              <i class="ph-bold ph-game-controller"></i> Pilah Sampah Game
-            </span>
-          </div>
-          <h3 class="text-xl font-bold text-gray-900 mb-2 group-hover:text-emerald-600 transition-colors">
-            Projek KKN Desa Sumbersari</h3>
-          <p class="text-gray-500 text-sm mb-4">Aplikasi web game edukasi "Pilah Sampah Adventure" (Home, Mode & Gameplay) dan program kerja pengabdian masyarakat di Desa Sumbersari.</p>
-          <div class="flex items-center pt-4 border-t border-emerald-50 gap-3">
-            <span class="text-emerald-600 text-sm font-semibold flex items-center gap-2 group-hover:gap-3 transition-all">
-              Buka Folder <i class="fas fa-chevron-right text-xs"></i>
-            </span>
-          </div>
-        </div>
-      </a>
-
-      <!-- Project Card 1: Saung Do'a -->
-      <div
-        class="group relative bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 border border-gray-100"
-        data-aos="fade-up" data-aos-delay="100">
-        <!-- Image Area -->
-        <div class="relative h-64 overflow-hidden">
-          <div
-            class="absolute inset-0 bg-indigo-900/20 group-hover:bg-indigo-900/10 transition-colors duration-300 z-10">
-          </div>
-          <img src="assets/saung.png" alt="Website Donasi Saung Do'a"
-            class="w-full h-full object-contain bg-gray-100 transform group-hover:scale-110 transition-transform duration-700">
-
-          <!-- Overlay Button -->
-          <div
-            class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-20 bg-black/40 backdrop-blur-[2px]">
-            <a href="#"
-              class="px-6 py-2 bg-white text-indigo-600 rounded-full font-semibold shadow-lg transform translate-y-4 group-hover:translate-y-0 transition-all duration-300 hover:bg-indigo-50">
-              Lihat Project
-            </a>
-          </div>
-        </div>
-
-        <!-- Content Area -->
-        <div class="p-6">
-          <div class="flex items-center justify-between mb-3">
-            <span class="px-3 py-1 text-xs font-medium text-indigo-600 bg-indigo-50 rounded-full">Web Development</span>
-          </div>
-          <h3 class="text-xl font-bold text-gray-900 mb-2 group-hover:text-indigo-600 transition-colors line-clamp-2">
-            Donasi Saung Do'a Anak Yatim</h3>
-          <p class="text-gray-500 text-sm mb-4 line-clamp-3">Website landing page dan platform donasi yayasan yang
-            dibangun dengan PHP Native dan Bootstrap.</p>
-          <div class="flex items-center pt-4 border-t border-gray-100 gap-3">
-            <i class="fab fa-php text-indigo-500 text-lg" title="PHP"></i>
-            <i class="fab fa-bootstrap text-purple-500 text-lg" title="Bootstrap"></i>
-            <i class="fab fa-html5 text-orange-500 text-lg" title="HTML5"></i>
-          </div>
-        </div>
-      </div>
-
-      <!-- Project Card 2: Restoku -->
-      <div
-        class="group relative bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 border border-gray-100"
-        data-aos="fade-up" data-aos-delay="200">
-        <div class="relative h-64 overflow-hidden">
-          <div
-            class="absolute inset-0 bg-indigo-900/20 group-hover:bg-indigo-900/10 transition-colors duration-300 z-10">
-          </div>
-          <img src="assets/restoku.webp" alt="Website Restoku"
-            class="w-full h-full object-contain bg-gray-100 transform group-hover:scale-110 transition-transform duration-700">
-
-          <div
-            class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-20 bg-black/40 backdrop-blur-[2px]">
-            <a href="https://restoku15.netlify.app/" target="_blank"
-              class="px-6 py-2 bg-white text-indigo-600 rounded-full font-semibold shadow-lg transform translate-y-4 group-hover:translate-y-0 transition-all duration-300 hover:bg-indigo-50">
-              Kunjungi Site
-            </a>
-          </div>
-        </div>
-
-        <div class="p-6">
-          <div class="flex items-center justify-between mb-3">
-            <span class="px-3 py-1 text-xs font-medium text-purple-600 bg-purple-50 rounded-full">Web App</span>
-          </div>
-          <h3 class="text-xl font-bold text-gray-900 mb-2 group-hover:text-purple-600 transition-colors">Restoku
-            Landing Page</h3>
-          <p class="text-gray-500 text-sm mb-4 line-clamp-3">Landing page modern dan dashboard interaktif untuk sistem
-            manajemen restoran yang efisien.</p>
-          <div class="flex items-center pt-4 border-t border-gray-100 gap-3">
-            <i class="fab fa-js text-yellow-500 text-lg" title="JavaScript"></i>
-            <i class="fab fa-css3-alt text-blue-500 text-lg" title="CSS3"></i>
-          </div>
-        </div>
-      </div>
-
-      <!-- Project Card 4: GYM Z -->
-      <div
-        class="group relative bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 border border-gray-100"
-        data-aos="fade-up" data-aos-delay="400">
-        <div class="relative h-64 overflow-hidden">
-          <div
-            class="absolute inset-0 bg-indigo-900/20 group-hover:bg-indigo-900/10 transition-colors duration-300 z-10">
-          </div>
-          <img src="assets/GYM.webp" alt="Landing Page GYM Z"
-            class="w-full h-full object-contain bg-gray-100 transform group-hover:scale-110 transition-transform duration-700">
-
-          <div
-            class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-20 bg-black/40 backdrop-blur-[2px]">
-            <a href="https://webgymz.netlify.app/" target="_blank"
-              class="px-6 py-2 bg-white text-indigo-600 rounded-full font-semibold shadow-lg transform translate-y-4 group-hover:translate-y-0 transition-all duration-300 hover:bg-indigo-50">
-              Kunjungi Site
-            </a>
-          </div>
-        </div>
-
-        <div class="p-6">
-          <div class="flex items-center justify-between mb-3">
-            <span class="px-3 py-1 text-xs font-medium text-emerald-600 bg-emerald-50 rounded-full">Landing Page</span>
-          </div>
-          <h3 class="text-xl font-bold text-gray-900 mb-2 group-hover:text-emerald-600 transition-colors">GYM Z Website
+        <div class="p-6 flex flex-col flex-grow">
+          <span class="text-xs font-semibold text-emerald-400 mb-2">Desa Sumbersari &bull; Web Game</span>
+          <h3 class="text-xl font-bold text-white mb-2 group-hover:text-indigo-400 transition-colors">
+            Pilah Sampah Adventure
           </h3>
-          <p class="text-gray-500 text-sm mb-4 line-clamp-3">Landing page modern untuk pusat kebugaran dengan desain
-            yang energik dan responsif.</p>
-          <div class="flex items-center pt-4 border-t border-gray-100 gap-3">
-            <i class="fab fa-html5 text-orange-500 text-lg" title="HTML5"></i>
-            <i class="fab fa-css3-alt text-blue-500 text-lg" title="CSS3"></i>
+          <p class="text-slate-400 text-sm mb-6 line-clamp-3 leading-relaxed">
+            Aplikasi web game edukasi pemilahan sampah interaktif dengan 3 mode permainan, audio synthesizer, dan program kerja pengabdian di Desa Sumbersari.
+          </p>
+          <div class="mt-auto pt-4 border-t border-slate-800/80 flex items-center justify-between">
+            <a href="kkn-project.html" class="inline-flex items-center gap-1.5 text-indigo-400 hover:text-indigo-300 text-sm font-semibold transition-colors">
+              Buka Folder <i class="fas fa-arrow-up-right-from-square text-xs"></i>
+            </a>
+            <span class="text-xs font-mono text-slate-500">Gamification</span>
           </div>
         </div>
       </div>
 
-      <div
-        class="group relative bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 border border-gray-100"
-        data-aos="fade-up" data-aos-delay="400">
-        <div class="relative h-64 overflow-hidden">
-          <div
-            class="absolute inset-0 bg-indigo-900/20 group-hover:bg-indigo-900/10 transition-colors duration-300 z-10">
+      <!-- Project 06: Saung Do'a -->
+      <div class="group bg-[#111827] rounded-2xl overflow-hidden border border-slate-800 hover:border-indigo-500/50 shadow-xl transition-all duration-300 flex flex-col h-full transform hover:-translate-y-1.5" data-aos="fade-up" data-aos-delay="300">
+        <div class="relative h-56 bg-slate-900 overflow-hidden">
+          <img src="assets/saung.png" alt="Saung Do'a" class="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-500">
+          <div class="absolute inset-0 bg-gradient-to-t from-[#111827] via-transparent to-transparent opacity-80"></div>
+          <div class="absolute top-4 left-4 bg-slate-900/90 backdrop-blur-md border border-slate-700/80 text-white font-mono text-xs font-bold px-2.5 py-1 rounded-lg">
+            06
           </div>
-          <img src="assets/klinik.webp" alt="Klinikaku Website"
-            class="w-full h-full object-contain bg-gray-100 transform group-hover:scale-110 transition-transform duration-700">
-
-          <div
-            class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-20 bg-black/40 backdrop-blur-[2px]">
-            <a href="https://klinikaku.netlify.app/" target="_blank"
-              class="px-6 py-2 bg-white text-indigo-600 rounded-full font-semibold shadow-lg transform translate-y-4 group-hover:translate-y-0 transition-all duration-300 hover:bg-indigo-50">
-              Kunjungi Site
-            </a>
+          <div class="absolute top-4 right-4 bg-purple-600 text-white text-[10px] font-black px-2.5 py-1 rounded-md uppercase tracking-wider">
+            WEB APP
           </div>
         </div>
-
-        <div class="p-6">
-          <div class="flex items-center justify-between mb-3">
-            <span class="px-3 py-1 text-xs font-medium text-emerald-600 bg-emerald-50 rounded-full">Landing Page</span>
-          </div>
-          <h3 class="text-xl font-bold text-gray-900 mb-2 group-hover:text-emerald-600 transition-colors">Klinikaku
-            Website
+        <div class="p-6 flex flex-col flex-grow">
+          <span class="text-xs font-semibold text-purple-400 mb-2">PHP &bull; Bootstrap</span>
+          <h3 class="text-xl font-bold text-white mb-2 group-hover:text-indigo-400 transition-colors">
+            Donasi Saung Do'a Anak Yatim
           </h3>
-          <p class="text-gray-500 text-sm mb-4 line-clamp-3">Landing page modern untuk klinik dengan desain
-            yang energik dan responsif.</p>
-          <div class="flex items-center pt-4 border-t border-gray-100 gap-3">
-            <i class="fab fa-html5 text-orange-500 text-lg" title="HTML5"></i>
-            <i class="fab fa-css3-alt text-blue-500 text-lg" title="CSS3"></i>
+          <p class="text-slate-400 text-sm mb-6 line-clamp-3 leading-relaxed">
+            Platform donasi digital dan landing page resmi yayasan anak yatim piatu yang dirancang terstruktur dan informatif untuk kemudahan para donatur.
+          </p>
+          <div class="mt-auto pt-4 border-t border-slate-800/80 flex items-center justify-between">
+            <span class="text-slate-400 text-xs font-medium">Platform Yayasan</span>
+            <span class="text-indigo-400 text-xs font-semibold">Web Development</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 07: Restoku -->
+      <div class="group bg-[#111827] rounded-2xl overflow-hidden border border-slate-800 hover:border-indigo-500/50 shadow-xl transition-all duration-300 flex flex-col h-full transform hover:-translate-y-1.5" data-aos="fade-up" data-aos-delay="350">
+        <div class="relative h-56 bg-slate-900 overflow-hidden">
+          <img src="assets/restoku.webp" alt="Restoku" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+          <div class="absolute inset-0 bg-gradient-to-t from-[#111827] via-transparent to-transparent opacity-80"></div>
+          <div class="absolute top-4 left-4 bg-slate-900/90 backdrop-blur-md border border-slate-700/80 text-white font-mono text-xs font-bold px-2.5 py-1 rounded-lg">
+            07
+          </div>
+          <div class="absolute top-4 right-4 bg-blue-600 text-white text-[10px] font-black px-2.5 py-1 rounded-md uppercase tracking-wider">
+            LANDING PAGE
+          </div>
+        </div>
+        <div class="p-6 flex flex-col flex-grow">
+          <span class="text-xs font-semibold text-blue-400 mb-2">JavaScript &bull; Modern UI</span>
+          <h3 class="text-xl font-bold text-white mb-2 group-hover:text-indigo-400 transition-colors">
+            Restoku Landing Page
+          </h3>
+          <p class="text-slate-400 text-sm mb-6 line-clamp-3 leading-relaxed">
+            Landing page modern dan presentasi dashboard interaktif untuk sistem manajemen restoran dan pemesanan menu digital.
+          </p>
+          <div class="mt-auto pt-4 border-t border-slate-800/80 flex items-center justify-between">
+            <a href="https://restoku15.netlify.app/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 text-indigo-400 hover:text-indigo-300 text-sm font-semibold transition-colors">
+              Kunjungi Site <i class="fas fa-arrow-up-right-from-square text-xs"></i>
+            </a>
+            <span class="text-xs font-mono text-slate-500">Live on Netlify</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 08: GYM Z -->
+      <div class="group bg-[#111827] rounded-2xl overflow-hidden border border-slate-800 hover:border-indigo-500/50 shadow-xl transition-all duration-300 flex flex-col h-full transform hover:-translate-y-1.5" data-aos="fade-up" data-aos-delay="400">
+        <div class="relative h-56 bg-slate-900 overflow-hidden">
+          <img src="assets/GYM.webp" alt="GYM Z Website" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+          <div class="absolute inset-0 bg-gradient-to-t from-[#111827] via-transparent to-transparent opacity-80"></div>
+          <div class="absolute top-4 left-4 bg-slate-900/90 backdrop-blur-md border border-slate-700/80 text-white font-mono text-xs font-bold px-2.5 py-1 rounded-lg">
+            08
+          </div>
+          <div class="absolute top-4 right-4 bg-emerald-600 text-white text-[10px] font-black px-2.5 py-1 rounded-md uppercase tracking-wider">
+            FITNESS
+          </div>
+        </div>
+        <div class="p-6 flex flex-col flex-grow">
+          <span class="text-xs font-semibold text-emerald-400 mb-2">HTML5 &bull; CSS3</span>
+          <h3 class="text-xl font-bold text-white mb-2 group-hover:text-indigo-400 transition-colors">
+            GYM Z Fitness Center
+          </h3>
+          <p class="text-slate-400 text-sm mb-6 line-clamp-3 leading-relaxed">
+            Landing page modern untuk pusat kebugaran dengan visual yang dinamis, katalog kelas olahraga, dan tata letak yang sepenuhnya responsif.
+          </p>
+          <div class="mt-auto pt-4 border-t border-slate-800/80 flex items-center justify-between">
+            <a href="https://webgymz.netlify.app/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 text-indigo-400 hover:text-indigo-300 text-sm font-semibold transition-colors">
+              Kunjungi Site <i class="fas fa-arrow-up-right-from-square text-xs"></i>
+            </a>
+            <span class="text-xs font-mono text-slate-500">Live on Netlify</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 09: Klinikaku -->
+      <div class="group bg-[#111827] rounded-2xl overflow-hidden border border-slate-800 hover:border-indigo-500/50 shadow-xl transition-all duration-300 flex flex-col h-full transform hover:-translate-y-1.5" data-aos="fade-up" data-aos-delay="450">
+        <div class="relative h-56 bg-slate-900 overflow-hidden">
+          <img src="assets/klinik.webp" alt="Klinikaku Website" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+          <div class="absolute inset-0 bg-gradient-to-t from-[#111827] via-transparent to-transparent opacity-80"></div>
+          <div class="absolute top-4 left-4 bg-slate-900/90 backdrop-blur-md border border-slate-700/80 text-white font-mono text-xs font-bold px-2.5 py-1 rounded-lg">
+            09
+          </div>
+          <div class="absolute top-4 right-4 bg-teal-600 text-white text-[10px] font-black px-2.5 py-1 rounded-md uppercase tracking-wider">
+            HEALTHCARE
+          </div>
+        </div>
+        <div class="p-6 flex flex-col flex-grow">
+          <span class="text-xs font-semibold text-teal-400 mb-2">Web Design &bull; Responsive</span>
+          <h3 class="text-xl font-bold text-white mb-2 group-hover:text-indigo-400 transition-colors">
+            Klinikaku Healthcare
+          </h3>
+          <p class="text-slate-400 text-sm mb-6 line-clamp-3 leading-relaxed">
+            Platform web profil dan layanan kesehatan klinik dengan tampilan yang ramah pasien, jadwal dokter, dan informasi konsultasi medis.
+          </p>
+          <div class="mt-auto pt-4 border-t border-slate-800/80 flex items-center justify-between">
+            <a href="https://klinikaku.netlify.app/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 text-indigo-400 hover:text-indigo-300 text-sm font-semibold transition-colors">
+              Kunjungi Site <i class="fas fa-arrow-up-right-from-square text-xs"></i>
+            </a>
+            <span class="text-xs font-mono text-slate-500">Live on Netlify</span>
           </div>
         </div>
       </div>
 
     </div>
 
-    <!-- View All Button -->
-    <div class="text-center mt-12" data-aos="fade-up">
-      <button
-        class="group inline-flex items-center gap-2 px-8 py-3 bg-white text-gray-800 border border-gray-200 rounded-full hover:bg-gray-50 hover:border-gray-300 transition-all duration-300 shadow-sm hover:shadow-md font-medium">
-        Lihat Semua Project
-        <i class="fas fa-arrow-right group-hover:translate-x-1 transition-transform"></i>
-      </button>
   </div>
 </section>

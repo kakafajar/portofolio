@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+  <!-- Basic Meta -->
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Projek Lomba Web - Rumah Belajar | Fajar Herlambang</title>
+  <meta name="description" content="Dokumentasi dan showcase Projek Lomba Web: Platform Bimbingan Belajar & Simulasi Interaktif MIPA Rumah Belajar oleh Fajar Herlambang.">
+
+  <!-- Tailwind & UI Libraries -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js" defer></script>
+  <script src="https://unpkg.com/@phosphor-icons/web" defer></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .glass-card {
+      background: rgba(255, 255, 255, 0.85);
+      backdrop-filter: blur(10px);
+      border: 1px solid rgba(255, 255, 255, 0.3);
+    }
+  </style>
+</head>
+
+<body class="bg-gray-50 text-gray-900">
+
+  <!-- Main Content -->
+  <main class="pt-10 pb-20">
+    <div class="container mx-auto px-6">
+
+      <!-- Breadcrumb & Header -->
+      <div class="mb-12" data-aos="fade-down">
+        <nav class="flex mb-4" aria-label="Breadcrumb">
+          <ol class="inline-flex items-center space-x-1 md:space-x-3">
+            <li class="inline-flex items-center">
+              <a href="index.html" class="inline-flex items-center text-sm font-medium text-gray-700 hover:text-amber-600 transition-colors">
+                <i class="ph-bold ph-house-line mr-2"></i> Home
+              </a>
+            </li>
+            <li>
+              <div class="flex items-center">
+                <i class="fas fa-chevron-right text-gray-400 text-xs mx-2"></i>
+                <a href="index.html#projects" class="text-sm font-medium text-gray-700 hover:text-amber-600 transition-colors">Projects</a>
+              </div>
+            </li>
+            <li>
+              <div class="flex items-center">
+                <i class="fas fa-chevron-right text-gray-400 text-xs mx-2"></i>
+                <span class="text-sm font-medium text-amber-600">Projek Lomba Web - Rumah Belajar</span>
+              </div>
+            </li>
+          </ol>
+        </nav>
+
+        <div class="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-6">
+          <div>
+            <span class="inline-flex items-center gap-1.5 px-3 py-1 bg-amber-100 text-amber-800 rounded-full text-xs font-bold mb-3">
+              <i class="ph-bold ph-trophy"></i> WEB DEVELOPMENT COMPETITION
+            </span>
+            <h1 class="text-3xl md:text-5xl font-extrabold text-gray-900 mb-4 leading-tight">
+              Rumah Belajar <span class="text-transparent bg-clip-text bg-gradient-to-r from-amber-500 via-orange-500 to-rose-500">MIPA Interaktif</span>
+            </h1>
+            <p class="text-gray-600 max-w-3xl text-base md:text-lg leading-relaxed">
+              Platform bimbingan belajar dan laboratorium visual interaktif untuk 4 mata pelajaran MIPA (Matematika, Fisika, Kimia, Biologi) jenjang SD, SMP, dan SMA. Dikembangkan dengan arsitektur multi-role (Admin Console, Portal Guru, dan Dashboard Siswa) serta sistem simulasi dinamis dan gamifikasi poin tantangan XP.
+            </p>
+            <div class="mt-6 flex flex-wrap items-center gap-3">
+              <a href="https://project-insyfest.vercel.app/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2.5 px-6 py-3 bg-gradient-to-r from-amber-500 to-orange-600 hover:from-amber-600 hover:to-orange-700 text-white font-bold rounded-2xl shadow-lg shadow-orange-500/25 hover:shadow-xl hover:-translate-y-0.5 transition-all text-sm md:text-base">
+                <i class="fas fa-external-link-alt text-xs"></i> Kunjungi Live Demo Web
+              </a>
+              <span class="text-xs text-gray-500 flex items-center gap-1.5 bg-amber-50 border border-amber-200/60 px-3.5 py-2 rounded-xl font-medium">
+                <i class="fas fa-globe text-amber-600"></i> project-insyfest.vercel.app
+              </span>
+            </div>
+          </div>
+          <div class="flex flex-wrap gap-2 lg:flex-col lg:items-end">
+            <span class="px-3.5 py-1.5 bg-amber-50 border border-amber-200 text-amber-700 rounded-lg text-xs font-semibold flex items-center gap-2">
+              <i class="fas fa-medal"></i> Karya Lomba Web EduTech
+            </span>
+            <span class="px-3.5 py-1.5 bg-orange-50 border border-orange-200 text-orange-700 rounded-lg text-xs font-semibold flex items-center gap-2">
+              <i class="fas fa-users-cog"></i> 3 Role Dashboard Terintegrasi
+            </span>
+            <span class="px-3.5 py-1.5 bg-teal-50 border border-teal-200 text-teal-700 rounded-lg text-xs font-semibold flex items-center gap-2">
+              <i class="fas fa-flask"></i> Simulasi Visual & Lab Interaktif
+            </span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Highlights / Core Sections Grid (4 Screenshots) -->
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
+
+        <!-- Showcase 1: Landing Page -->
+        <div class="bg-white rounded-3xl shadow-lg border border-gray-100 overflow-hidden group hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1.5 flex flex-col h-full" data-aos="fade-up" data-aos-delay="100">
+          <div class="relative h-64 bg-gradient-to-br from-amber-50 to-orange-50 overflow-hidden cursor-pointer" data-modal-target="modal-lomba-home" data-modal-toggle="modal-lomba-home">
+            <img src="assets/lomba_Web/halaman utama.png" alt="Halaman Utama Rumah Belajar MIPA" class="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-500">
+            <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-4">
+              <span class="text-white text-xs font-bold flex items-center gap-2">
+                <i class="fas fa-search-plus"></i> Perbesar Tampilan Beranda
+              </span>
+            </div>
+            <div class="absolute top-4 left-4">
+              <span class="bg-amber-500 text-white text-[10px] font-black px-2.5 py-1 rounded-md shadow-md uppercase tracking-wider">BERANDA & LANDING PAGE</span>
+            </div>
+          </div>
+          <div class="p-6 flex flex-col flex-grow">
+            <h3 class="text-xl font-bold text-gray-900 mb-2 group-hover:text-amber-600 transition-colors">Halaman Utama (Landing Page)</h3>
+            <p class="text-gray-500 text-sm mb-4 line-clamp-3 leading-relaxed">
+              Tampilan beranda ramah siswa dengan visualisasi modern, navigasi jenjang (SD, SMP, SMA), highlight 4 mapel MIPA, eksplorasi laboratorium visual, dan tantangan kuis gamifikasi berhadiah XP.
+            </p>
+            <div class="mt-auto pt-4 border-t border-gray-100 flex items-center justify-between">
+              <span class="text-xs font-semibold text-amber-600 flex items-center gap-1">
+                <i class="fas fa-desktop"></i> UI/UX Edukasi & Gamifikasi
+              </span>
+              <button data-modal-target="modal-lomba-home" data-modal-toggle="modal-lomba-home" class="px-4 py-2 bg-amber-50 text-amber-700 hover:bg-amber-600 hover:text-white text-xs font-bold rounded-xl transition-all">
+                Lihat Detail <i class="fas fa-arrow-right ml-1"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Showcase 2: Admin Console -->
+        <div class="bg-white rounded-3xl shadow-lg border border-gray-100 overflow-hidden group hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1.5 flex flex-col h-full" data-aos="fade-up" data-aos-delay="200">
+          <div class="relative h-64 bg-gradient-to-br from-emerald-50 to-teal-50 overflow-hidden cursor-pointer" data-modal-target="modal-lomba-admin" data-modal-toggle="modal-lomba-admin">
+            <img src="assets/lomba_Web/Admin.png" alt="Dashboard Admin Console Rumah Belajar" class="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-500">
+            <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-4">
+              <span class="text-white text-xs font-bold flex items-center gap-2">
+                <i class="fas fa-search-plus"></i> Perbesar Dashboard Admin
+              </span>
+            </div>
+            <div class="absolute top-4 left-4">
+              <span class="bg-emerald-600 text-white text-[10px] font-black px-2.5 py-1 rounded-md shadow-md uppercase tracking-wider">ADMIN CONSOLE</span>
+            </div>
+          </div>
+          <div class="p-6 flex flex-col flex-grow">
+            <h3 class="text-xl font-bold text-gray-900 mb-2 group-hover:text-emerald-600 transition-colors">Dashboard Admin Console</h3>
+            <p class="text-gray-500 text-sm mb-4 line-clamp-3 leading-relaxed">
+              Panel pengendalian terpusat untuk monitoring omset pendapatan (Rp 4.027.500), analisis tren pertumbuhan, grafik distribusi jenjang siswa (SMA 84%, SMP 8%, SD 8%), serta manajemen user dan guru.
+            </p>
+            <div class="mt-auto pt-4 border-t border-gray-100 flex items-center justify-between">
+              <span class="text-xs font-semibold text-emerald-600 flex items-center gap-1">
+                <i class="fas fa-chart-line"></i> Analytics & Manajemen
+              </span>
+              <button data-modal-target="modal-lomba-admin" data-modal-toggle="modal-lomba-admin" class="px-4 py-2 bg-emerald-50 text-emerald-700 hover:bg-emerald-600 hover:text-white text-xs font-bold rounded-xl transition-all">
+                Lihat Detail <i class="fas fa-arrow-right ml-1"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Showcase 3: Dashboard Guru -->
+        <div class="bg-white rounded-3xl shadow-lg border border-gray-100 overflow-hidden group hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1.5 flex flex-col h-full" data-aos="fade-up" data-aos-delay="300">
+          <div class="relative h-64 bg-gradient-to-br from-slate-800 to-slate-900 overflow-hidden cursor-pointer" data-modal-target="modal-lomba-guru" data-modal-toggle="modal-lomba-guru">
+            <img src="assets/lomba_Web/Guru.png" alt="Dashboard Guru Pendidik Rumah Belajar" class="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-500">
+            <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-4">
+              <span class="text-white text-xs font-bold flex items-center gap-2">
+                <i class="fas fa-search-plus"></i> Perbesar Dashboard Guru
+              </span>
+            </div>
+            <div class="absolute top-4 left-4">
+              <span class="bg-teal-500 text-white text-[10px] font-black px-2.5 py-1 rounded-md shadow-md uppercase tracking-wider">TEACHER PORTAL (DARK/LIGHT)</span>
+            </div>
+          </div>
+          <div class="p-6 flex flex-col flex-grow">
+            <h3 class="text-xl font-bold text-gray-900 mb-2 group-hover:text-teal-600 transition-colors">Dashboard Guru & Pendidik</h3>
+            <p class="text-gray-500 text-sm mb-4 line-clamp-3 leading-relaxed">
+              Ruang kerja pengajar dengan kode akses 6 digit guru, sistem upload berkas materi & video, penjadwalan bimbingan, bank soal kuis, serta live sync statistik pengerjaan kuis siswa secara real-time.
+            </p>
+            <div class="mt-auto pt-4 border-t border-gray-100 flex items-center justify-between">
+              <span class="text-xs font-semibold text-teal-600 flex items-center gap-1">
+                <i class="fas fa-chalkboard-teacher"></i> Manajemen Kuis & Siswa
+              </span>
+              <button data-modal-target="modal-lomba-guru" data-modal-toggle="modal-lomba-guru" class="px-4 py-2 bg-teal-50 text-teal-700 hover:bg-teal-600 hover:text-white text-xs font-bold rounded-xl transition-all">
+                Lihat Detail <i class="fas fa-arrow-right ml-1"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Showcase 4: Dashboard Siswa -->
+        <div class="bg-white rounded-3xl shadow-lg border border-gray-100 overflow-hidden group hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1.5 flex flex-col h-full" data-aos="fade-up" data-aos-delay="400">
+          <div class="relative h-64 bg-gradient-to-br from-indigo-900 to-slate-900 overflow-hidden cursor-pointer" data-modal-target="modal-lomba-murid" data-modal-toggle="modal-lomba-murid">
+            <img src="assets/lomba_Web/Murid.png" alt="Dashboard Murid Siswa Rumah Belajar" class="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-500">
+            <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-4">
+              <span class="text-white text-xs font-bold flex items-center gap-2">
+                <i class="fas fa-search-plus"></i> Perbesar Dashboard Siswa
+              </span>
+            </div>
+            <div class="absolute top-4 left-4">
+              <span class="bg-indigo-600 text-white text-[10px] font-black px-2.5 py-1 rounded-md shadow-md uppercase tracking-wider">STUDENT LEARNING HUB</span>
+            </div>
+          </div>
+          <div class="p-6 flex flex-col flex-grow">
+            <h3 class="text-xl font-bold text-gray-900 mb-2 group-hover:text-indigo-600 transition-colors">Dashboard Siswa (User Learning)</h3>
+            <p class="text-gray-500 text-sm mb-4 line-clamp-3 leading-relaxed">
+              Portal belajar personal bagi siswa dengan modul aktif 4 Mapel MIPA, progress bar pembelajaran, catatan evaluasi guru, unduh nota langganan, jadwal bimbingan, chat guru, dan akses Lab Virtual.
+            </p>
+            <div class="mt-auto pt-4 border-t border-gray-100 flex items-center justify-between">
+              <span class="text-xs font-semibold text-indigo-600 flex items-center gap-1">
+                <i class="fas fa-user-graduate"></i> Modul Belajar & Lab Virtual
+              </span>
+              <button data-modal-target="modal-lomba-murid" data-modal-toggle="modal-lomba-murid" class="px-4 py-2 bg-indigo-50 text-indigo-700 hover:bg-indigo-600 hover:text-white text-xs font-bold rounded-xl transition-all">
+                Lihat Detail <i class="fas fa-arrow-right ml-1"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Feature & Architecture Overview Banner -->
+      <div class="bg-gradient-to-r from-amber-900 via-orange-950 to-slate-900 rounded-3xl shadow-xl overflow-hidden p-8 md:p-12 text-white mb-16" data-aos="fade-up">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+          <div class="lg:col-span-8">
+            <span class="inline-block px-3 py-1 bg-amber-500/20 text-amber-300 rounded-full text-xs font-bold mb-4 border border-amber-500/30">
+              <i class="fas fa-award mr-1"></i> Keunggulan Platform Lomba Web
+            </span>
+            <h2 class="text-2xl md:text-4xl font-bold mb-4 leading-tight">
+              Inovasi EduTech: Simulasi Interaktif & Tata Kelola Multi-User Terpadu
+            </h2>
+            <p class="text-amber-100/80 text-sm md:text-base leading-relaxed mb-6">
+              Projek ini dirancang untuk menjawab tantangan pembelajaran sains (MIPA) yang seringkali dianggap abstrak. Melalui pendekatan laboratorium visual interaktif, siswa dapat memanipulasi parameter rumus secara langsung, mengamati fenomena dinamis, serta meningkatkan retensi materi dengan sistem gamifikasi XP. Seluruh aktivitas terhubung langsung ke dashboard pengajar dan administrator secara real-time.
+            </p>
+            <div class="flex flex-wrap gap-2 text-xs">
+              <span class="px-3 py-1.5 bg-white/10 backdrop-blur-md rounded-lg font-medium border border-white/20">
+                <i class="fab fa-html5 text-amber-400 mr-1.5"></i> HTML5 Semantic
+              </span>
+              <span class="px-3 py-1.5 bg-white/10 backdrop-blur-md rounded-lg font-medium border border-white/20">
+                <i class="fab fa-css3-alt text-blue-400 mr-1.5"></i> Tailwind CSS
+              </span>
+              <span class="px-3 py-1.5 bg-white/10 backdrop-blur-md rounded-lg font-medium border border-white/20">
+                <i class="fab fa-js text-yellow-400 mr-1.5"></i> Modern JavaScript
+              </span>
+              <span class="px-3 py-1.5 bg-white/10 backdrop-blur-md rounded-lg font-medium border border-white/20">
+                <i class="fas fa-chart-pie text-emerald-400 mr-1.5"></i> Data Visualizations
+              </span>
+              <span class="px-3 py-1.5 bg-white/10 backdrop-blur-md rounded-lg font-medium border border-white/20">
+                <i class="fas fa-gamepad text-purple-400 mr-1.5"></i> XP Gamification Engine
+              </span>
+            </div>
+          </div>
+          <div class="lg:col-span-4 flex flex-col gap-3">
+            <div class="p-4 bg-white/10 backdrop-blur-md rounded-2xl border border-white/15">
+              <div class="text-2xl font-black text-amber-300">4 Mapel</div>
+              <div class="text-xs text-gray-300">Matematika, Fisika, Kimia, Biologi</div>
+            </div>
+            <div class="p-4 bg-white/10 backdrop-blur-md rounded-2xl border border-white/15">
+              <div class="text-2xl font-black text-orange-300">3 Jenjang</div>
+              <div class="text-xs text-gray-300">Kurikulum Bertingkat SD, SMP, SMA</div>
+            </div>
+            <div class="p-4 bg-white/10 backdrop-blur-md rounded-2xl border border-white/15">
+              <div class="text-2xl font-black text-emerald-300">Multi-Role</div>
+              <div class="text-xs text-gray-300">Admin Console, Guru Portal, Siswa Hub</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Navigation Back Button & Live Demo -->
+      <div class="flex flex-wrap items-center justify-center gap-4 text-center">
+        <a href="index.html#projects" class="inline-flex items-center gap-2 px-8 py-3 bg-white text-amber-700 border-2 border-amber-200 rounded-full font-bold hover:bg-amber-50 hover:border-amber-300 transition-all duration-300 shadow-sm hover:shadow-md">
+          <i class="fas fa-arrow-left"></i> Kembali ke Portfolio Utama
+        </a>
+        <a href="https://project-insyfest.vercel.app/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 px-8 py-3 bg-gradient-to-r from-amber-500 to-orange-600 hover:from-amber-600 hover:to-orange-700 text-white rounded-full font-bold shadow-lg shadow-orange-500/20 hover:shadow-xl hover:-translate-y-0.5 transition-all">
+          <i class="fas fa-external-link-alt"></i> Kunjungi Live Demo Web
+        </a>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- MODALS SECTION -->
+
+  <!-- Modal 1: Landing Page -->
+  <div id="modal-lomba-home" tabindex="-1" aria-hidden="true" class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full">
+    <div class="relative p-4 w-full max-w-4xl max-h-full">
+      <div class="relative bg-white rounded-3xl shadow-2xl overflow-hidden border border-gray-100">
+        <div class="flex items-center justify-between p-6 border-b border-gray-100 bg-amber-50/40">
+          <div>
+            <span class="text-xs font-bold text-amber-600 uppercase tracking-wider">MODUL BERANDA INTERAKTIF</span>
+            <h3 class="text-xl font-bold text-gray-900">Halaman Utama (Landing Page Rumah Belajar)</h3>
+          </div>
+          <button type="button" class="text-gray-400 hover:bg-gray-200 hover:text-gray-900 rounded-full text-sm w-9 h-9 inline-flex justify-center items-center transition-colors" data-modal-hide="modal-lomba-home">
+            <i class="fas fa-times text-base"></i>
+          </button>
+        </div>
+        <div class="p-6 space-y-6 overflow-y-auto max-h-[75vh]">
+          <div class="rounded-2xl overflow-hidden shadow-md border border-gray-200">
+            <img src="assets/lomba_Web/halaman utama.png" alt="Detail Landing Page Rumah Belajar" class="w-full object-contain bg-gray-100">
+          </div>
+          
+          <div class="space-y-4">
+            <h4 class="text-lg font-bold text-gray-900 flex items-center gap-2">
+              <i class="fas fa-info-circle text-amber-600"></i> Deskripsi & Konsep Desain
+            </h4>
+            <p class="text-gray-600 leading-relaxed text-sm">
+              Halaman utama dirancang dengan estetika modern, ilustrasi ramah siswa, dan tipografi yang jelas untuk memberikan pengalaman orientasi belajar yang menyenangkan. Pengguna dapat dengan mudah memahami proposisi nilai bimbingan belajar MIPA serta langsung mengakses materi sesuai tingkatan sekolah.
+            </p>
+
+            <h4 class="text-lg font-bold text-gray-900 flex items-center gap-2 pt-2">
+              <i class="fas fa-star text-amber-600"></i> Fitur Utama Beranda
+            </h4>
+            <ul class="grid grid-cols-1 md:grid-cols-2 gap-3 text-sm text-gray-600">
+              <li class="p-3 bg-amber-50/60 rounded-xl border border-amber-100 flex items-start gap-2">
+                <i class="fas fa-check-circle text-amber-600 mt-1"></i>
+                <span><strong>Navigasi 4 Mapel MIPA:</strong> Akses terpadu ke bidang Matematika, Fisika, Kimia, dan Biologi.</span>
+              </li>
+              <li class="p-3 bg-amber-50/60 rounded-xl border border-amber-100 flex items-start gap-2">
+                <i class="fas fa-layer-group text-amber-600 mt-1"></i>
+                <span><strong>3 Jenjang Sekolah:</strong> Struktur materi terklasifikasi untuk tingkat SD, SMP, dan SMA.</span>
+              </li>
+              <li class="p-3 bg-amber-50/60 rounded-xl border border-amber-100 flex items-start gap-2">
+                <i class="fas fa-vr-cardboard text-amber-600 mt-1"></i>
+                <span><strong>Simulasi Visual 100%:</strong> Eksplorasi laboratorium visual dengan manipulasi variabel dinamis.</span>
+              </li>
+              <li class="p-3 bg-amber-50/60 rounded-xl border border-amber-100 flex items-start gap-2">
+                <i class="fas fa-trophy text-amber-600 mt-1"></i>
+                <span><strong>Tantangan XP & Gamifikasi:</strong> Mengerjakan latihan soal dan kuis berhadiah poin pengalaman (XP Level).</span>
+              </li>
+            </ul>
+
+            <div class="pt-4 border-t border-gray-100 flex items-center justify-end">
+              <a href="https://project-insyfest.vercel.app/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 px-5 py-2.5 bg-gradient-to-r from-amber-500 to-orange-600 hover:from-amber-600 hover:to-orange-700 text-white font-bold rounded-xl shadow-md hover:shadow-lg transition-all text-xs sm:text-sm">
+                <i class="fas fa-external-link-alt text-xs"></i> Buka Website Live Demo
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 2: Admin Console -->
+  <div id="modal-lomba-admin" tabindex="-1" aria-hidden="true" class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full">
+    <div class="relative p-4 w-full max-w-4xl max-h-full">
+      <div class="relative bg-white rounded-3xl shadow-2xl overflow-hidden border border-gray-100">
+        <div class="flex items-center justify-between p-6 border-b border-gray-100 bg-emerald-50/40">
+          <div>
+            <span class="text-xs font-bold text-emerald-600 uppercase tracking-wider">PANEL PENGENDALIAN SISTEM</span>
+            <h3 class="text-xl font-bold text-gray-900">Dashboard Administrator (Admin Console)</h3>
+          </div>
+          <button type="button" class="text-gray-400 hover:bg-gray-200 hover:text-gray-900 rounded-full text-sm w-9 h-9 inline-flex justify-center items-center transition-colors" data-modal-hide="modal-lomba-admin">
+            <i class="fas fa-times text-base"></i>
+          </button>
+        </div>
+        <div class="p-6 space-y-6 overflow-y-auto max-h-[75vh]">
+          <div class="rounded-2xl overflow-hidden shadow-md border border-gray-200">
+            <img src="assets/lomba_Web/Admin.png" alt="Detail Admin Console Rumah Belajar" class="w-full object-contain bg-gray-100">
+          </div>
+          
+          <div class="space-y-4">
+            <h4 class="text-lg font-bold text-gray-900 flex items-center gap-2">
+              <i class="fas fa-chart-line text-emerald-600"></i> Fungsionalitas Admin Console
+            </h4>
+            <p class="text-gray-600 leading-relaxed text-sm">
+              Dashboard Administrator menyajikan ringkasan operasional bimbel secara menyeluruh melalui metrik statistik, visualisasi grafik tren bulanan, status verifikasi pendidik, dan log aktivitas sistem secara real-time.
+            </p>
+
+            <h4 class="text-lg font-bold text-gray-900 flex items-center gap-2 pt-2">
+              <i class="fas fa-sliders-h text-emerald-600"></i> Komponen & Metrik Data
+            </h4>
+            <ul class="grid grid-cols-1 md:grid-cols-2 gap-3 text-sm text-gray-600">
+              <li class="p-3 bg-emerald-50/60 rounded-xl border border-emerald-100 flex items-start gap-2">
+                <i class="fas fa-users text-emerald-600 mt-1"></i>
+                <span><strong>Siswa & Guru Aktif:</strong> Pelacakan 25 siswa terdaftar (+14.2%) dan 3 guru pengajar terverifikasi 100%.</span>
+              </li>
+              <li class="p-3 bg-emerald-50/60 rounded-xl border border-emerald-100 flex items-start gap-2">
+                <i class="fas fa-wallet text-emerald-600 mt-1"></i>
+                <span><strong>Total Pendapatan (Omset):</strong> Pencatatan finansial Rp 4.027.500 (+18.4% pertumbuhan omset bulanan).</span>
+              </li>
+              <li class="p-3 bg-emerald-50/60 rounded-xl border border-emerald-100 flex items-start gap-2">
+                <i class="fas fa-flask text-emerald-600 mt-1"></i>
+                <span><strong>Sesi Lab Diselesaikan:</strong> 33 sesi laboratorium visual dengan tingkat kelulusan tinggi mencapai 94.6%.</span>
+              </li>
+              <li class="p-3 bg-emerald-50/60 rounded-xl border border-emerald-100 flex items-start gap-2">
+                <i class="fas fa-chart-pie text-emerald-600 mt-1"></i>
+                <span><strong>Distribusi Jenjang & Modul:</strong> Visualisasi proporsi murid (SMA/SMK 84%, SMP 8%, SD 8%) dan audit log sistem.</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 3: Dashboard Guru -->
+  <div id="modal-lomba-guru" tabindex="-1" aria-hidden="true" class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full">
+    <div class="relative p-4 w-full max-w-4xl max-h-full">
+      <div class="relative bg-white rounded-3xl shadow-2xl overflow-hidden border border-gray-100">
+        <div class="flex items-center justify-between p-6 border-b border-gray-100 bg-teal-50/40">
+          <div>
+            <span class="text-xs font-bold text-teal-600 uppercase tracking-wider">PORTAL TENAGA PENDIDIK</span>
+            <h3 class="text-xl font-bold text-gray-900">Dashboard Guru & Pendidik</h3>
+          </div>
+          <button type="button" class="text-gray-400 hover:bg-gray-200 hover:text-gray-900 rounded-full text-sm w-9 h-9 inline-flex justify-center items-center transition-colors" data-modal-hide="modal-lomba-guru">
+            <i class="fas fa-times text-base"></i>
+          </button>
+        </div>
+        <div class="p-6 space-y-6 overflow-y-auto max-h-[75vh]">
+          <div class="rounded-2xl overflow-hidden shadow-md border border-gray-200">
+            <img src="assets/lomba_Web/Guru.png" alt="Detail Dashboard Guru Rumah Belajar" class="w-full object-contain bg-gray-100">
+          </div>
+          
+          <div class="space-y-4">
+            <h4 class="text-lg font-bold text-gray-900 flex items-center gap-2">
+              <i class="fas fa-chalkboard text-teal-600"></i> Fungsionalitas Portal Guru
+            </h4>
+            <p class="text-gray-600 leading-relaxed text-sm">
+              Dirancang untuk memfasilitasi tenaga pendidik dalam mengelola materi pelajaran, memantau kemajuan murid bimbingan, menyusun kuis interaktif, dan mengevaluasi hasil pengerjaan secara langsung dengan dukungan mode gelap/terang (Dark/Light Mode).
+            </p>
+
+            <h4 class="text-lg font-bold text-gray-900 flex items-center gap-2 pt-2">
+              <i class="fas fa-cogs text-teal-600"></i> Modul Utama Guru
+            </h4>
+            <ul class="grid grid-cols-1 md:grid-cols-2 gap-3 text-sm text-gray-600">
+              <li class="p-3 bg-teal-50/60 rounded-xl border border-teal-100 flex items-start gap-2">
+                <i class="fas fa-key text-teal-600 mt-1"></i>
+                <span><strong>Sistem Kode Akses 6 Digit:</strong> Autentikasi unik pengajar (#586741) untuk menghubungkan murid ke kelas bimbingan.</span>
+              </li>
+              <li class="p-3 bg-teal-50/60 rounded-xl border border-teal-100 flex items-start gap-2">
+                <i class="fas fa-file-upload text-teal-600 mt-1"></i>
+                <span><strong>Manajemen Berkas Materi:</strong> Kemudahan upload modul, dokumen PDF, dan link video pembelajaran.</span>
+              </li>
+              <li class="p-3 bg-teal-50/60 rounded-xl border border-teal-100 flex items-start gap-2">
+                <i class="fas fa-tasks text-teal-600 mt-1"></i>
+                <span><strong>Bank Soal & Penilaian:</strong> Fitur pembuatan kuis, monitoring rata-rata nilai, serta filter jawaban benar/salah.</span>
+              </li>
+              <li class="p-3 bg-teal-50/60 rounded-xl border border-teal-100 flex items-start gap-2">
+                <i class="fas fa-sync-alt text-teal-600 mt-1"></i>
+                <span><strong>Live Real-Time Sync:</strong> Sinkronisasi progres pengerjaan kuis siswa secara otomatis tanpa perlu refresh halaman.</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 4: Dashboard Siswa -->
+  <div id="modal-lomba-murid" tabindex="-1" aria-hidden="true" class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full">
+    <div class="relative p-4 w-full max-w-4xl max-h-full">
+      <div class="relative bg-white rounded-3xl shadow-2xl overflow-hidden border border-gray-100">
+        <div class="flex items-center justify-between p-6 border-b border-gray-100 bg-indigo-50/40">
+          <div>
+            <span class="text-xs font-bold text-indigo-600 uppercase tracking-wider">PORTAL PEMBELAJARAN SISWA</span>
+            <h3 class="text-xl font-bold text-gray-900">Dashboard Siswa (User Learning Hub)</h3>
+          </div>
+          <button type="button" class="text-gray-400 hover:bg-gray-200 hover:text-gray-900 rounded-full text-sm w-9 h-9 inline-flex justify-center items-center transition-colors" data-modal-hide="modal-lomba-murid">
+            <i class="fas fa-times text-base"></i>
+          </button>
+        </div>
+        <div class="p-6 space-y-6 overflow-y-auto max-h-[75vh]">
+          <div class="rounded-2xl overflow-hidden shadow-md border border-gray-200">
+            <img src="assets/lomba_Web/Murid.png" alt="Detail Dashboard Murid Rumah Belajar" class="w-full object-contain bg-gray-100">
+          </div>
+          
+          <div class="space-y-4">
+            <h4 class="text-lg font-bold text-gray-900 flex items-center gap-2">
+              <i class="fas fa-user-graduate text-indigo-600"></i> Pengalaman Belajar Siswa
+            </h4>
+            <p class="text-gray-600 leading-relaxed text-sm">
+              Dashboard siswa memberikan ikhtisar terstruktur mengenai perjalanan belajar, status langganan bimbel, modul mata pelajaran yang sedang aktif, umpan balik dari pengajar, serta akses instan ke ruang eksperimen laboratorium virtual.
+            </p>
+
+            <h4 class="text-lg font-bold text-gray-900 flex items-center gap-2 pt-2">
+              <i class="fas fa-laptop-code text-indigo-600"></i> Fitur & Layanan Siswa
+            </h4>
+            <ul class="grid grid-cols-1 md:grid-cols-2 gap-3 text-sm text-gray-600">
+              <li class="p-3 bg-indigo-50/60 rounded-xl border border-indigo-100 flex items-start gap-2">
+                <i class="fas fa-id-badge text-indigo-600 mt-1"></i>
+                <span><strong>Status Langganan & Nota:</strong> Informasi paket aktif bimbingan serta fasilitas unduh nota pembayaran digital.</span>
+              </li>
+              <li class="p-3 bg-indigo-50/60 rounded-xl border border-indigo-100 flex items-start gap-2">
+                <i class="fas fa-comment-dots text-indigo-600 mt-1"></i>
+                <span><strong>Catatan Evaluasi Guru:</strong> Feedback dan catatan personal langsung dari guru pengajar untuk perbaikan capaian belajar.</span>
+              </li>
+              <li class="p-3 bg-indigo-50/60 rounded-xl border border-indigo-100 flex items-start gap-2">
+                <i class="fas fa-book-reader text-indigo-600 mt-1"></i>
+                <span><strong>Modul & Video Interaktif:</strong> Kartu mata pelajaran aktif (Matematika, Fisika, Kimia, Biologi) dengan indikator progress %.</span>
+              </li>
+              <li class="p-3 bg-indigo-50/60 rounded-xl border border-indigo-100 flex items-start gap-2">
+                <i class="fas fa-atom text-indigo-600 mt-1"></i>
+                <span><strong>Akses Lab Virtual & Chat:</strong> Peluncuran laboratorium visual MIPA langsung dari sidebar dan ruang diskusi interaktif dengan guru.</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer Container -->
+  <div id="footer"></div>
+
+  <!-- Scripts -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="main.js"></script>
+  <script>
+    // Ensure modals function reliably across all devices & browsers
+    document.addEventListener("DOMContentLoaded", () => {
+      document.querySelectorAll('[data-modal-target], [data-modal-toggle]').forEach(trigger => {
+        trigger.addEventListener('click', (e) => {
+          e.preventDefault();
+          const targetId = trigger.getAttribute('data-modal-target') || trigger.getAttribute('data-modal-toggle');
+          const modal = document.getElementById(targetId);
+          if (modal) {
+            modal.classList.remove('hidden');
+            modal.classList.add('flex');
+            document.body.style.overflow = 'hidden';
+          }
+        });
+      });
+
+      document.querySelectorAll('[data-modal-hide]').forEach(closeBtn => {
+        closeBtn.addEventListener('click', (e) => {
+          e.preventDefault();
+          const targetId = closeBtn.getAttribute('data-modal-hide');
+          const modal = document.getElementById(targetId);
+          if (modal) {
+            modal.classList.add('hidden');
+            modal.classList.remove('flex');
+            document.body.style.overflow = '';
+          }
+        });
+      });
+
+      document.querySelectorAll('[id^="modal-lomba-"]').forEach(modal => {
+        modal.addEventListener('click', (e) => {
+          if (e.target === modal) {
+            modal.classList.add('hidden');
+            modal.classList.remove('flex');
+            document.body.style.overflow = '';
+          }
+        });
+      });
+
+      document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape') {
+          document.querySelectorAll('[id^="modal-lomba-"]').forEach(modal => {
+            modal.classList.add('hidden');
+            modal.classList.remove('flex');
+          });
+          document.body.style.overflow = '';
+        }
+      });
+    });
+  </script>
+</body>
+
+</html>

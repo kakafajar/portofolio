@@ -1,112 +1,169 @@
-<section id="contact" class="py-20 bg-gray-50 overflow-hidden">
-    <div class="container mx-auto px-6">
+<section id="contact" class="py-24 bg-[#0b0f19] border-t border-slate-800/80 relative overflow-hidden">
+    <!-- Ambient glow behind contact -->
+    <div class="absolute bottom-0 right-1/4 w-[600px] h-[350px] bg-purple-600/5 blur-[130px] rounded-full pointer-events-none"></div>
 
-        <div class="flex flex-col lg:flex-row gap-12 lg:gap-20">
+    <div class="container mx-auto px-6 relative z-10">
 
-            <!-- Left Side: Contact Info -->
-            <div class="lg:w-5/12" data-aos="fade-right">
-                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
-                    Let's Work <br>
-                    <span
-                        class="text-transparent bg-clip-text bg-gradient-to-r from-indigo-600 to-purple-600">Together</span>
-                </h2>
-                <p class="text-gray-600 text-lg mb-10 leading-relaxed">
-                    Punya ide proyek menarik atau ingin berdiskusi tentang peluang kerjasama? Jangan ragu untuk
-                    menghubungi saya. Saya selalu terbuka untuk tantangan baru.
-                </p>
+        <!-- Section Header -->
+        <div class="text-center mb-16" data-aos="fade-up">
+            <span class="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-mono font-medium bg-indigo-500/10 text-indigo-400 border border-indigo-500/20 mb-3">
+                <i class="fas fa-paper-plane text-[11px]"></i> LET'S WORK TOGETHER
+            </span>
+            <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">
+                Have a Project <span class="text-transparent bg-clip-text bg-gradient-to-r from-indigo-400 via-purple-300 to-indigo-300">in Mind?</span>
+            </h2>
+            <div class="w-16 h-1 bg-gradient-to-r from-indigo-500 to-purple-500 mx-auto rounded-full mb-4"></div>
+            <p class="text-slate-400 max-w-2xl mx-auto text-sm md:text-base leading-relaxed">
+                Punya ide proyek menarik atau ingin berdiskusi tentang peluang kolaborasi? Jangan ragu untuk menghubungi saya. Saya selalu terbuka untuk eksplorasi dan tantangan baru.
+            </p>
+        </div>
 
-                <div class="space-y-6">
-                    <!-- Email -->
-                    <div class="flex items-start gap-4 group">
-                        <div
-                            class="w-12 h-12 bg-white rounded-xl shadow-sm flex items-center justify-center text-indigo-600 group-hover:bg-indigo-600 group-hover:text-white transition-all duration-300">
-                            <i class="fas fa-envelope text-xl"></i>
-                        </div>
-                        <div>
-                            <h4 class="font-bold text-gray-900">Email</h4>
-                            <a href="mailto:fajarrr1511@gmail.com"
-                                class="text-gray-600 hover:text-indigo-600 transition-colors">fajarrr1511@gmail.com</a>
-                        </div>
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-10 items-start">
+
+            <!-- Left: Contact Form (7 cols) -->
+            <div class="lg:col-span-7 bg-[#111827] rounded-2xl p-6 sm:p-8 md:p-10 border border-slate-800/80 shadow-2xl relative" data-aos="fade-right">
+                <div class="flex items-center justify-between mb-8 pb-4 border-b border-slate-800/60">
+                    <div>
+                        <h3 class="text-xl font-bold text-white">Send a Message</h3>
+                        <p class="text-xs text-slate-400 font-mono mt-1">Directly forwarded to WhatsApp</p>
                     </div>
-
-                    <!-- Location -->
-                    <div class="flex items-start gap-4 group">
-                        <div
-                            class="w-12 h-12 bg-white rounded-xl shadow-sm flex items-center justify-center text-purple-600 group-hover:bg-purple-600 group-hover:text-white transition-all duration-300">
-                            <i class="fas fa-map-marker-alt text-xl"></i>
-                        </div>
-                        <div>
-                            <h4 class="font-bold text-gray-900">Location</h4>
-                            <p class="text-gray-600">Karawang, Jawa Barat, Indonesia</p>
-                        </div>
-                    </div>
+                    <span class="px-2.5 py-1 rounded-md text-xs font-mono bg-indigo-500/10 text-indigo-400 border border-indigo-500/20 flex items-center gap-1.5">
+                        <span class="w-2 h-2 rounded-full bg-indigo-400"></span> Fast Response
+                    </span>
                 </div>
 
-                <!-- Social Links -->
-                <div class="mt-12">
-                    <h4 class="font-bold text-gray-900 mb-4">Follow Me</h4>
-                    <div class="flex gap-4">
-                        <a href="https://www.linkedin.com/in/fajar-herlambang-415561280/"
-                            class="w-10 h-10 bg-white rounded-full flex items-center justify-center text-gray-500 shadow-sm hover:bg-blue-600 hover:text-white hover:-translate-y-1 transition-all duration-300">
-                            <i class="fab fa-linkedin-in"></i>
-                        </a>
-                        <a href="https://github.com/kakafajar"
-                            class="w-10 h-10 bg-white rounded-full flex items-center justify-center text-gray-500 shadow-sm hover:bg-gray-900 hover:text-white hover:-translate-y-1 transition-all duration-300">
-                            <i class="fab fa-github"></i>
-                        </a>
-                        <a href="https://www.instagram.com/kakafajar2/"
-                            class="w-10 h-10 bg-white rounded-full flex items-center justify-center text-gray-500 shadow-sm hover:bg-pink-600 hover:text-white hover:-translate-y-1 transition-all duration-300">
-                            <i class="fab fa-instagram"></i>
-                        </a>
-                        <a href="https://wa.me/6285890558653"
-                            class="w-10 h-10 bg-white rounded-full flex items-center justify-center text-gray-500 shadow-sm hover:bg-green-500 hover:text-white hover:-translate-y-1 transition-all duration-300">
-                            <i class="fab fa-whatsapp"></i>
-                        </a>
+                <form id="contact-form" action="#" class="space-y-5">
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
+                        <!-- Name -->
+                        <div class="space-y-2">
+                            <label for="name" class="block text-xs font-mono font-medium text-slate-300">Your Name *</label>
+                            <input type="text" id="name" placeholder="John Doe" required
+                                class="w-full px-4 py-3 rounded-xl bg-slate-900/90 border border-slate-700/80 text-white placeholder-slate-500 focus:border-indigo-500 focus:ring-1 focus:ring-indigo-500 outline-none transition-all text-sm font-sans">
+                        </div>
+                        <!-- Email -->
+                        <div class="space-y-2">
+                            <label for="email" class="block text-xs font-mono font-medium text-slate-300">Your Email</label>
+                            <input type="email" id="email" placeholder="john@example.com"
+                                class="w-full px-4 py-3 rounded-xl bg-slate-900/90 border border-slate-700/80 text-white placeholder-slate-500 focus:border-indigo-500 focus:ring-1 focus:ring-indigo-500 outline-none transition-all text-sm font-sans">
+                        </div>
                     </div>
-                </div>
+
+                    <!-- Subject -->
+                    <div class="space-y-2">
+                        <label for="subject" class="block text-xs font-mono font-medium text-slate-300">Subject</label>
+                        <input type="text" id="subject" placeholder="Project Discussion / Collaboration"
+                            class="w-full px-4 py-3 rounded-xl bg-slate-900/90 border border-slate-700/80 text-white placeholder-slate-500 focus:border-indigo-500 focus:ring-1 focus:ring-indigo-500 outline-none transition-all text-sm font-sans">
+                    </div>
+
+                    <!-- Message -->
+                    <div class="space-y-2">
+                        <label for="message" class="block text-xs font-mono font-medium text-slate-300">Message *</label>
+                        <textarea id="message" rows="4" placeholder="Ceritakan detail kebutuhan proyek atau pesan Anda..." required
+                            class="w-full px-4 py-3 rounded-xl bg-slate-900/90 border border-slate-700/80 text-white placeholder-slate-500 focus:border-indigo-500 focus:ring-1 focus:ring-indigo-500 outline-none transition-all text-sm font-sans resize-none"></textarea>
+                    </div>
+
+                    <!-- Submit Button -->
+                    <button type="submit"
+                        class="w-full py-3.5 bg-gradient-to-r from-indigo-600 via-indigo-500 to-purple-600 text-white font-medium rounded-xl shadow-lg shadow-indigo-600/30 hover:shadow-indigo-600/50 hover:opacity-95 transform hover:-translate-y-0.5 transition-all duration-300 flex items-center justify-center gap-2 text-sm">
+                        <span>Send Message</span>
+                        <i class="fas fa-paper-plane text-xs"></i>
+                    </button>
+                </form>
             </div>
 
-            <!-- Right Side: Form -->
-            <div class="lg:w-7/12" data-aos="fade-left">
-                <div class="bg-white rounded-3xl shadow-xl p-8 md:p-10 border border-gray-100">
-                    <form id="contact-form" action="#" class="space-y-6">
-                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                            <!-- Name -->
-                            <div class="space-y-2">
-                                <label for="name" class="text-sm font-semibold text-gray-700">Your Name</label>
-                                <input type="text" id="name" placeholder="John Doe"
-                                    class="w-full px-4 py-3 rounded-xl bg-gray-50 border border-gray-200 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 outline-none transition-all duration-300">
-                            </div>
-                            <!-- Email -->
-                            <div class="space-y-2">
-                                <label for="email" class="text-sm font-semibold text-gray-700">Your Email</label>
-                                <input type="email" id="email" placeholder="john@example.com"
-                                    class="w-full px-4 py-3 rounded-xl bg-gray-50 border border-gray-200 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 outline-none transition-all duration-300">
-                            </div>
-                        </div>
+            <!-- Right: Info & Connect (5 cols) -->
+            <div class="lg:col-span-5 space-y-6" data-aos="fade-left">
 
-                        <!-- Subject -->
-                        <div class="space-y-2">
-                            <label for="subject" class="text-sm font-semibold text-gray-700">Subject</label>
-                            <input type="text" id="subject" placeholder="Project Discussion"
-                                class="w-full px-4 py-3 rounded-xl bg-gray-50 border border-gray-200 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 outline-none transition-all duration-300">
+                <!-- Status & Quote Card -->
+                <div class="bg-[#111827] rounded-2xl p-6 border border-slate-800/80">
+                    <div class="flex items-center gap-2 mb-4">
+                        <span class="relative flex h-2.5 w-2.5">
+                            <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
+                            <span class="relative inline-flex rounded-full h-2.5 w-2.5 bg-emerald-500"></span>
+                        </span>
+                        <span class="text-xs font-mono text-emerald-400 font-medium">AVAILABLE FOR WORK</span>
+                    </div>
+                    <blockquote class="text-slate-300 text-sm italic leading-relaxed mb-4 border-l-2 border-indigo-500/50 pl-3">
+                        "Clean code, seamless user experience, and practical software solutions are the standard for every digital product."
+                    </blockquote>
+                    <div class="flex items-center gap-3 pt-3 border-t border-slate-800/60">
+                        <div class="w-10 h-10 rounded-full overflow-hidden border border-indigo-500/40">
+                            <img src="assets/my-foto/fajar.jpg" alt="Fajar Herlambang" class="w-full h-full object-cover">
                         </div>
-
-                        <!-- Message -->
-                        <div class="space-y-2">
-                            <label for="message" class="text-sm font-semibold text-gray-700">Message</label>
-                            <textarea id="message" rows="4" placeholder="Tell me about your project..."
-                                class="w-full px-4 py-3 rounded-xl bg-gray-50 border border-gray-200 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 outline-none transition-all duration-300 resize-none"></textarea>
+                        <div>
+                            <div class="text-sm font-bold text-white">Fajar Herlambang</div>
+                            <div class="text-xs text-slate-400 font-mono">Web Developer & AI Specialist</div>
                         </div>
-
-                        <!-- Submit Button -->
-                        <button type="submit"
-                            class="w-full py-4 bg-gradient-to-r from-indigo-600 to-purple-600 text-white font-bold rounded-xl shadow-lg hover:shadow-xl hover:opacity-90 transform hover:-translate-y-1 transition-all duration-300 flex items-center justify-center gap-2">
-                            <span>Send Message</span>
-                            <i class="fas fa-paper-plane"></i>
-                        </button>
-                    </form>
+                    </div>
                 </div>
+
+                <!-- Contact Info Card -->
+                <div class="bg-[#111827] rounded-2xl p-6 border border-slate-800/80 space-y-4">
+                    <h4 class="text-xs font-mono text-slate-400 uppercase tracking-wider mb-2">Direct Contact</h4>
+
+                    <!-- Email -->
+                    <a href="mailto:fajarrr1511@gmail.com" class="flex items-center gap-4 p-3 rounded-xl bg-slate-900/60 border border-slate-800/60 hover:border-indigo-500/40 transition-colors group">
+                        <div class="w-10 h-10 rounded-lg bg-indigo-500/10 border border-indigo-500/20 flex items-center justify-center text-indigo-400 group-hover:bg-indigo-600 group-hover:text-white transition-all">
+                            <i class="fas fa-envelope text-sm"></i>
+                        </div>
+                        <div class="min-w-0 flex-1">
+                            <div class="text-[11px] font-mono text-slate-400">Email Address</div>
+                            <div class="text-sm font-medium text-white truncate group-hover:text-indigo-300 transition-colors">fajarrr1511@gmail.com</div>
+                        </div>
+                        <i class="fas fa-arrow-up-right-from-square text-xs text-slate-500 group-hover:text-indigo-400"></i>
+                    </a>
+
+                    <!-- WhatsApp / Phone -->
+                    <a href="https://wa.me/6285890558653" target="_blank" rel="noopener noreferrer" class="flex items-center gap-4 p-3 rounded-xl bg-slate-900/60 border border-slate-800/60 hover:border-emerald-500/40 transition-colors group">
+                        <div class="w-10 h-10 rounded-lg bg-emerald-500/10 border border-emerald-500/20 flex items-center justify-center text-emerald-400 group-hover:bg-emerald-600 group-hover:text-white transition-all">
+                            <i class="fab fa-whatsapp text-sm"></i>
+                        </div>
+                        <div class="min-w-0 flex-1">
+                            <div class="text-[11px] font-mono text-slate-400">WhatsApp / Phone</div>
+                            <div class="text-sm font-medium text-white truncate group-hover:text-emerald-300 transition-colors">+62 858-9055-8653</div>
+                        </div>
+                        <i class="fas fa-arrow-up-right-from-square text-xs text-slate-500 group-hover:text-emerald-400"></i>
+                    </a>
+
+                    <!-- Location -->
+                    <div class="flex items-center gap-4 p-3 rounded-xl bg-slate-900/60 border border-slate-800/60">
+                        <div class="w-10 h-10 rounded-lg bg-purple-500/10 border border-purple-500/20 flex items-center justify-center text-purple-400">
+                            <i class="fas fa-map-marker-alt text-sm"></i>
+                        </div>
+                        <div>
+                            <div class="text-[11px] font-mono text-slate-400">Location</div>
+                            <div class="text-sm font-medium text-white">Karawang, Jawa Barat, Indonesia</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Follow Me Card -->
+                <div class="bg-[#111827] rounded-2xl p-6 border border-slate-800/80">
+                    <h4 class="text-xs font-mono text-slate-400 uppercase tracking-wider mb-4">Follow Me</h4>
+                    <div class="grid grid-cols-4 gap-3">
+                        <a href="https://github.com/kakafajar" target="_blank" rel="noopener noreferrer"
+                            class="flex flex-col items-center justify-center p-3 rounded-xl bg-slate-900/80 border border-slate-800 hover:border-indigo-500/50 hover:bg-slate-800/80 text-slate-300 hover:text-white transition-all duration-200 group">
+                            <i class="fab fa-github text-lg mb-1 group-hover:scale-110 transition-transform"></i>
+                            <span class="text-[10px] font-mono text-slate-400">GitHub</span>
+                        </a>
+                        <a href="https://www.linkedin.com/in/fajar-herlambang-415561280/" target="_blank" rel="noopener noreferrer"
+                            class="flex flex-col items-center justify-center p-3 rounded-xl bg-slate-900/80 border border-slate-800 hover:border-blue-500/50 hover:bg-slate-800/80 text-slate-300 hover:text-blue-400 transition-all duration-200 group">
+                            <i class="fab fa-linkedin-in text-lg mb-1 group-hover:scale-110 transition-transform"></i>
+                            <span class="text-[10px] font-mono text-slate-400">LinkedIn</span>
+                        </a>
+                        <a href="https://www.instagram.com/kakafajar2/" target="_blank" rel="noopener noreferrer"
+                            class="flex flex-col items-center justify-center p-3 rounded-xl bg-slate-900/80 border border-slate-800 hover:border-pink-500/50 hover:bg-slate-800/80 text-slate-300 hover:text-pink-400 transition-all duration-200 group">
+                            <i class="fab fa-instagram text-lg mb-1 group-hover:scale-110 transition-transform"></i>
+                            <span class="text-[10px] font-mono text-slate-400">Instagram</span>
+                        </a>
+                        <a href="https://wa.me/6285890558653" target="_blank" rel="noopener noreferrer"
+                            class="flex flex-col items-center justify-center p-3 rounded-xl bg-slate-900/80 border border-slate-800 hover:border-emerald-500/50 hover:bg-slate-800/80 text-slate-300 hover:text-emerald-400 transition-all duration-200 group">
+                            <i class="fab fa-whatsapp text-lg mb-1 group-hover:scale-110 transition-transform"></i>
+                            <span class="text-[10px] font-mono text-slate-400">WhatsApp</span>
+                        </a>
+                    </div>
+                </div>
+
             </div>
 
         </div>

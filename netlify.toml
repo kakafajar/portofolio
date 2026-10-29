@@ -12,3 +12,18 @@
   to = "/internship-bulog.html"
   status = 200
 
+[[redirects]]
+  from = "/kkn-project"
+  to = "/kkn-project.html"
+  status = 200
+
+[[redirects]]
+  from = "/lomba-web"
+  to = "/lomba-web.html"
+  status = 200
+
+[[redirects]]
+  from = "/belajar-jepang"
+  to = "/belajar-jepang.html"
+  status = 200
+

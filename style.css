@@ -1,19 +1,66 @@
 html {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
+  color-scheme: dark;
+}
+
+body {
+  background-color: #0b0f19;
+  color: #f1f5f9;
+}
+
+/* Custom Dark Scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0b0f19;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #1e293b;
+  border-radius: 5px;
+  border: 2px solid #0b0f19;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #334155;
+}
+
+/* Dark Card & Borders */
+.dark-card {
+  background-color: #111827;
+  border: 1px solid rgba(51, 65, 85, 0.4);
+}
+
+.dark-card:hover {
+  border-color: rgba(99, 102, 241, 0.4);
+}
+
+/* Code Snippet Card */
+.code-window {
+  background: #0d1322;
+  border: 1px solid rgba(99, 102, 241, 0.25);
+  box-shadow: 0 20px 40px -15px rgba(0, 0, 0, 0.7);
 }
 
 /* Animations */
 @keyframes fadeUp {
-    from {
-        opacity: 0;
-        transform: translateY(20px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .fade-up-enter {
-    animation: fadeUp 0.6s ease-out forwards;
+  animation: fadeUp 0.6s ease-out forwards;
+}
+
+/* Subtle Ambient Glow */
+.ambient-glow {
+  background: radial-gradient(circle, rgba(124, 58, 237, 0.35) 0%, rgba(99, 102, 241, 0.15) 50%, transparent 70%);
 }

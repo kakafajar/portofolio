@@ -20,7 +20,7 @@ const sectionMappings = [
   { id: "hero", file: "hero.html" },
   { id: "about", file: "about.html" },
   { id: "keahlian", file: "keahlian.html" },
-  { id: "career", file: "career.html", callback: initLightbox },
+  { id: "career", file: "career.html" },
   { id: "projects", file: "projects.html" },
   { id: "sertifikat", file: "sertifikat.html", callback: initSertifikat },
   { id: "contact", file: "contact.html", callback: initContact },
@@ -96,18 +96,20 @@ function initLightbox() {
     }, 10);
   };
 
-  const careerSection = document.getElementById("career");
-  if (careerSection) {
-    careerSection.addEventListener("click", (e) => {
-      // Do not trigger preview if clicking links or action buttons
-      if (e.target.closest("a") || e.target.closest("button")) return;
+  ["career", "sertifikat"].forEach((sectionId) => {
+    const sec = document.getElementById(sectionId);
+    if (sec) {
+      sec.addEventListener("click", (e) => {
+        // Do not trigger preview if clicking links or action buttons
+        if (e.target.closest("a") || e.target.closest("button")) return;
 
-      const targetImg = e.target.closest("img") || (e.target.closest(".relative") ? e.target.closest(".relative").querySelector("img") : null);
-      if (targetImg && targetImg.src) {
-        openLightbox(targetImg.src, targetImg.alt);
-      }
-    });
-  }
+        const targetImg = e.target.closest("img") || (e.target.closest(".relative") ? e.target.closest(".relative").querySelector("img") : null);
+        if (targetImg && targetImg.src) {
+          openLightbox(targetImg.src, targetImg.alt);
+        }
+      });
+    }
+  });
 
   if (closeBtn) {
     closeBtn.addEventListener("click", closeLightbox);
@@ -183,6 +185,7 @@ const promises = sectionMappings
   .map(s => loadSection(s.id, s.file).then(() => s.callback && s.callback()));
 
 Promise.all(promises).then(() => {
+  initLightbox();
   if (typeof AOS !== 'undefined') {
     setTimeout(() => {
       AOS.init({ once: true, duration: 800, offset: 50 });

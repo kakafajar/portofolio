@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+  <!-- Basic Meta -->
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Website Belajar Bahasa Jepang - NihongoLearn | Fajar Herlambang</title>
+  <meta name="description" content="Dokumentasi dan showcase Website Belajar Bahasa Jepang: NihongoLearn - Platform Edukasi Aksara Hiragana Interaktif dengan Audio Native oleh Fajar Herlambang.">
+
+  <!-- Tailwind & UI Libraries -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js" defer></script>
+  <script src="https://unpkg.com/@phosphor-icons/web" defer></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .glass-card {
+      background: rgba(255, 255, 255, 0.85);
+      backdrop-filter: blur(10px);
+      border: 1px solid rgba(255, 255, 255, 0.3);
+    }
+  </style>
+</head>
+
+<body class="bg-gray-50 text-gray-900">
+
+  <!-- Main Content -->
+  <main class="pt-10 pb-20">
+    <div class="container mx-auto px-6">
+
+      <!-- Breadcrumb & Header -->
+      <div class="mb-12" data-aos="fade-down">
+        <nav class="flex mb-4" aria-label="Breadcrumb">
+          <ol class="inline-flex items-center space-x-1 md:space-x-3">
+            <li class="inline-flex items-center">
+              <a href="index.html" class="inline-flex items-center text-sm font-medium text-gray-700 hover:text-rose-600 transition-colors">
+                <i class="ph-bold ph-house-line mr-2"></i> Home
+              </a>
+            </li>
+            <li>
+              <div class="flex items-center">
+                <i class="fas fa-chevron-right text-gray-400 text-xs mx-2"></i>
+                <a href="index.html#projects" class="text-sm font-medium text-gray-700 hover:text-rose-600 transition-colors">Projects</a>
+              </div>
+            </li>
+            <li>
+              <div class="flex items-center">
+                <i class="fas fa-chevron-right text-gray-400 text-xs mx-2"></i>
+                <span class="text-sm font-medium text-rose-600">Website Belajar Bahasa Jepang (NihongoLearn)</span>
+              </div>
+            </li>
+          </ol>
+        </nav>
+
+        <div class="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-6">
+          <div>
+            <span class="inline-flex items-center gap-1.5 px-3 py-1 bg-rose-100 text-rose-800 rounded-full text-xs font-bold mb-3">
+              <i class="ph-bold ph-translate"></i> INTERACTIVE EDUTECH JP
+            </span>
+            <h1 class="text-3xl md:text-5xl font-extrabold text-gray-900 mb-4 leading-tight">
+              NihongoLearn <span class="text-transparent bg-clip-text bg-gradient-to-r from-rose-600 via-red-500 to-amber-500">日本語学習</span>
+            </h1>
+            <p class="text-gray-600 max-w-3xl text-base md:text-lg leading-relaxed">
+              Platform web interaktif untuk mempelajari aksara dan dasar bahasa Jepang. Menampilkan bagan lengkap 107 karakter Hiragana aktif (Seion, Dakuon, Handakuon, Yoon) terintegrasi dengan audio pelafalan native speaker, mode flashcard kartu detail, serta simulasi kuis hafalan dinamis.
+            </p>
+            <div class="mt-6 flex flex-wrap items-center gap-3">
+              <a href="https://website-belajar-bahasa-jepang.vercel.app/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2.5 px-6 py-3 bg-gradient-to-r from-rose-600 to-red-600 hover:from-rose-700 hover:to-red-700 text-white font-bold rounded-2xl shadow-lg shadow-rose-600/25 hover:shadow-xl hover:-translate-y-0.5 transition-all text-sm md:text-base">
+                <i class="fas fa-external-link-alt text-xs"></i> Kunjungi Live Demo Web
+              </a>
+              <span class="text-xs text-gray-500 flex items-center gap-1.5 bg-rose-50 border border-rose-200/60 px-3.5 py-2 rounded-xl font-medium">
+                <i class="fas fa-globe text-rose-600"></i> website-belajar-bahasa-jepang.vercel.app
+              </span>
+            </div>
+          </div>
+          <div class="flex flex-wrap gap-2 lg:flex-col lg:items-end">
+            <span class="px-3.5 py-1.5 bg-rose-50 border border-rose-200 text-rose-700 rounded-lg text-xs font-semibold flex items-center gap-2">
+              <i class="fas fa-volume-up"></i> Pelafalan Audio Native Speaker
+            </span>
+            <span class="px-3.5 py-1.5 bg-red-50 border border-red-200 text-red-700 rounded-lg text-xs font-semibold flex items-center gap-2">
+              <i class="fas fa-font"></i> 107 Karakter Hiragana Lengkap
+            </span>
+            <span class="px-3.5 py-1.5 bg-amber-50 border border-amber-200 text-amber-700 rounded-lg text-xs font-semibold flex items-center gap-2">
+              <i class="fas fa-question-circle"></i> Kuis Uji Pemahaman Interaktif
+            </span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Main Showcase Section: Interactive Screenshot & Core Modules -->
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 mb-16 items-start">
+
+        <!-- Left Column: Large Interactive Image Card -->
+        <div class="lg:col-span-8 bg-white rounded-3xl shadow-lg border border-gray-100 overflow-hidden group hover:shadow-2xl transition-all duration-300" data-aos="fade-right">
+          <div class="relative bg-gradient-to-br from-rose-50 to-red-50 overflow-hidden cursor-pointer" data-modal-target="modal-jepang-full" data-modal-toggle="modal-jepang-full">
+            <img src="assets/Website Belajar Bahasa Jepang/Jepang.png" alt="Tampilan Antarmuka NihongoLearn Hiragana" class="w-full h-auto object-contain group-hover:scale-[1.02] transition-transform duration-500">
+            <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
+              <span class="text-white text-sm font-bold flex items-center gap-2 bg-black/50 px-4 py-2 rounded-xl backdrop-blur-sm">
+                <i class="fas fa-search-plus"></i> Klik untuk Perbesar Tangkapan Layar Lengkap
+              </span>
+            </div>
+            <div class="absolute top-4 left-4">
+              <span class="bg-rose-600 text-white text-[10px] font-black px-2.5 py-1 rounded-md shadow-md uppercase tracking-wider">HIRAGANA TABLE & AUDIO ENGINE</span>
+            </div>
+          </div>
+          <div class="p-6 md:p-8">
+            <div class="flex flex-wrap items-center justify-between gap-3 mb-4">
+              <h3 class="text-2xl font-bold text-gray-900 group-hover:text-rose-600 transition-colors">
+                Antarmuka Pembelajaran Hiragana (ひらがな)
+              </h3>
+              <div class="flex items-center gap-2">
+                <a href="https://website-belajar-bahasa-jepang.vercel.app/" target="_blank" rel="noopener noreferrer" class="px-4 py-2 bg-gradient-to-r from-rose-600 to-red-600 hover:from-rose-700 hover:to-red-700 text-white text-xs font-bold rounded-xl shadow-sm hover:shadow transition-all flex items-center gap-1.5">
+                  <i class="fas fa-external-link-alt text-[10px]"></i> Live Demo
+                </a>
+                <button data-modal-target="modal-jepang-full" data-modal-toggle="modal-jepang-full" class="px-4 py-2 bg-rose-50 text-rose-700 hover:bg-rose-600 hover:text-white text-xs font-bold rounded-xl transition-all flex items-center gap-1.5">
+                  <i class="fas fa-expand"></i> Detail
+                </button>
+              </div>
+            </div>
+            <p class="text-gray-600 leading-relaxed text-sm md:text-base mb-6">
+              Tampilan dirancang bersih dan intuitif dengan susunan aksara berdasarkan standar <em>Gojūon</em> (5 baris vokal A-I-U-E-O). Siswa dapat langsung mengklik kotak huruf mana pun untuk mendengarkan pengucapan yang benar dari penutur asli Jepang, membantu pemula membedakan intonasi dan artikulasi secara akurat.
+            </p>
+            
+            <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 pt-4 border-t border-gray-100 text-center">
+              <div class="p-3 bg-rose-50/50 rounded-2xl border border-rose-100">
+                <div class="text-2xl font-black text-rose-600">46</div>
+                <div class="text-[11px] font-medium text-gray-600">Seion (Huruf Dasar)</div>
+              </div>
+              <div class="p-3 bg-red-50/50 rounded-2xl border border-red-100">
+                <div class="text-2xl font-black text-red-600">20</div>
+                <div class="text-[11px] font-medium text-gray-600">Dakuon (Teng-teng ゛)</div>
+              </div>
+              <div class="p-3 bg-amber-50/50 rounded-2xl border border-amber-100">
+                <div class="text-2xl font-black text-amber-600">5</div>
+                <div class="text-[11px] font-medium text-gray-600">Handakuon (Maru ゜)</div>
+              </div>
+              <div class="p-3 bg-purple-50/50 rounded-2xl border border-purple-100">
+                <div class="text-2xl font-black text-purple-600">36</div>
+                <div class="text-[11px] font-medium text-gray-600">Yōon (Kombinasi ゃ ゅ ょ)</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Column: Key Features Breakdown -->
+        <div class="lg:col-span-4 space-y-6" data-aos="fade-left">
+          
+          <!-- Feature 1: Audio Pronunciation -->
+          <div class="bg-white rounded-3xl p-6 shadow-lg border border-gray-100 hover:border-rose-200 transition-all">
+            <div class="w-12 h-12 bg-rose-100 rounded-2xl flex items-center justify-center text-rose-600 mb-4 shadow-sm">
+              <i class="fas fa-volume-up text-xl"></i>
+            </div>
+            <h4 class="text-lg font-bold text-gray-900 mb-2">Pelafalan Audio Native</h4>
+            <p class="text-gray-500 text-xs sm:text-sm leading-relaxed">
+              Setiap kotak aksara Hiragana terhubung ke berkas audio resolusi tinggi dengan pengucapan asli Tokyo. Klik instan tanpa loading berkat pre-caching audio engine.
+            </p>
+          </div>
+
+          <!-- Feature 2: Dual Mode (Table & Flashcard) -->
+          <div class="bg-white rounded-3xl p-6 shadow-lg border border-gray-100 hover:border-red-200 transition-all">
+            <div class="w-12 h-12 bg-red-100 rounded-2xl flex items-center justify-center text-red-600 mb-4 shadow-sm">
+              <i class="fas fa-th-large text-xl"></i>
+            </div>
+            <h4 class="text-lg font-bold text-gray-900 mb-2">Mode Bagan Tabel & Kartu Detail</h4>
+            <p class="text-gray-500 text-xs sm:text-sm leading-relaxed">
+              Menyediakan tombol peralihan antara "Bagan Tabel" matriks terstruktur dan "Kartu Detail" (Flashcard) interaktif yang memperlihatkan urutan goresan (*kakijun*) serta contoh kata.
+            </p>
+          </div>
+
+          <!-- Feature 3: Interactive Quiz -->
+          <div class="bg-white rounded-3xl p-6 shadow-lg border border-gray-100 hover:border-amber-200 transition-all">
+            <div class="w-12 h-12 bg-amber-100 rounded-2xl flex items-center justify-center text-amber-600 mb-4 shadow-sm">
+              <i class="fas fa-bullseye text-xl"></i>
+            </div>
+            <h4 class="text-lg font-bold text-gray-900 mb-2">Simulasi Kuis Hiragana</h4>
+            <p class="text-gray-500 text-xs sm:text-sm leading-relaxed">
+              Fitur "Mulai Kuis Hiragana" untuk menguji daya ingat aksara secara acak, menghitung skor ketepatan, dan memberikan feedback koreksi langsung bagi pengguna.
+            </p>
+          </div>
+
+        </div>
+
+      </div>
+
+      <!-- Pedagogy & Methodology Section Banner -->
+      <div class="bg-gradient-to-r from-rose-950 via-red-950 to-slate-900 rounded-3xl shadow-xl overflow-hidden p-8 md:p-12 text-white mb-16" data-aos="fade-up">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+          <div class="lg:col-span-8">
+            <span class="inline-block px-3 py-1 bg-rose-500/20 text-rose-300 rounded-full text-xs font-bold mb-4 border border-rose-500/30">
+              <i class="fas fa-graduation-cap mr-1"></i> Metode Pembelajaran Terpadu
+            </span>
+            <h2 class="text-2xl md:text-4xl font-bold mb-4 leading-tight">
+              Belajar Huruf Jepang Lebih Mudah, Cepat, dan Menyenangkan
+            </h2>
+            <p class="text-rose-100/80 text-sm md:text-base leading-relaxed mb-6">
+              Menguasai aksara Hiragana adalah langkah pertama yang paling fundamental dalam mempelajari bahasa Jepang. NihongoLearn dirancang khusus dengan pendekatan multimedia (visual + audio + kuis) untuk memastikan pelajar pemula dapat menghafal bentuk karakter, membaca romaji, dan melafalkannya dengan aksen yang tepat sedini mungkin.
+            </p>
+            <div class="flex flex-wrap gap-2 text-xs">
+              <span class="px-3 py-1.5 bg-white/10 backdrop-blur-md rounded-lg font-medium border border-white/20">
+                <i class="fab fa-html5 text-orange-400 mr-1.5"></i> HTML5 Audio API
+              </span>
+              <span class="px-3 py-1.5 bg-white/10 backdrop-blur-md rounded-lg font-medium border border-white/20">
+                <i class="fab fa-css3-alt text-rose-400 mr-1.5"></i> Tailwind CSS
+              </span>
+              <span class="px-3 py-1.5 bg-white/10 backdrop-blur-md rounded-lg font-medium border border-white/20">
+                <i class="fab fa-js text-yellow-400 mr-1.5"></i> ES6+ Dynamic Audio Engine
+              </span>
+              <span class="px-3 py-1.5 bg-white/10 backdrop-blur-md rounded-lg font-medium border border-white/20">
+                <i class="fas fa-mobile-alt text-teal-400 mr-1.5"></i> Fully Responsive Design
+              </span>
+            </div>
+          </div>
+          <div class="lg:col-span-4 flex flex-col gap-3">
+            <div class="p-4 bg-white/10 backdrop-blur-md rounded-2xl border border-white/15">
+              <div class="text-2xl font-black text-rose-300">107 Aksara</div>
+              <div class="text-xs text-gray-300">Hiragana Lengkap Seion, Dakuon & Yoon</div>
+            </div>
+            <div class="p-4 bg-white/10 backdrop-blur-md rounded-2xl border border-white/15">
+              <div class="text-2xl font-black text-red-300">Instant Audio</div>
+              <div class="text-xs text-gray-300">Pelafalan Suara Native 1-Klik</div>
+            </div>
+            <div class="p-4 bg-white/10 backdrop-blur-md rounded-2xl border border-white/15">
+              <div class="text-2xl font-black text-amber-300">Gamified Quiz</div>
+              <div class="text-xs text-gray-300">Sistem Latihan & Uji Ingatan</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Navigation Back Button & Live Demo -->
+      <div class="flex flex-wrap items-center justify-center gap-4 text-center">
+        <a href="index.html#projects" class="inline-flex items-center gap-2 px-8 py-3 bg-white text-rose-700 border-2 border-rose-200 rounded-full font-bold hover:bg-rose-50 hover:border-rose-300 transition-all duration-300 shadow-sm hover:shadow-md">
+          <i class="fas fa-arrow-left"></i> Kembali ke Portfolio Utama
+        </a>
+        <a href="https://website-belajar-bahasa-jepang.vercel.app/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 px-8 py-3 bg-gradient-to-r from-rose-600 to-red-600 hover:from-rose-700 hover:to-red-700 text-white rounded-full font-bold shadow-lg shadow-rose-600/20 hover:shadow-xl hover:-translate-y-0.5 transition-all">
+          <i class="fas fa-external-link-alt"></i> Kunjungi Live Demo Web
+        </a>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- MODALS SECTION -->
+
+  <!-- Modal 1: NihongoLearn Full Interface -->
+  <div id="modal-jepang-full" tabindex="-1" aria-hidden="true" class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full">
+    <div class="relative p-4 w-full max-w-5xl max-h-full">
+      <div class="relative bg-white rounded-3xl shadow-2xl overflow-hidden border border-gray-100">
+        <div class="flex items-center justify-between p-6 border-b border-gray-100 bg-rose-50/40">
+          <div>
+            <span class="text-xs font-bold text-rose-600 uppercase tracking-wider">DETAIL ANTARMUKA NIHONGOLEARN</span>
+            <h3 class="text-xl font-bold text-gray-900">Bagan Lengkap Aksara Hiragana & Audio Native</h3>
+          </div>
+          <button type="button" class="text-gray-400 hover:bg-gray-200 hover:text-gray-900 rounded-full text-sm w-9 h-9 inline-flex justify-center items-center transition-colors" data-modal-hide="modal-jepang-full">
+            <i class="fas fa-times text-base"></i>
+          </button>
+        </div>
+        <div class="p-6 space-y-6 overflow-y-auto max-h-[75vh]">
+          <div class="rounded-2xl overflow-hidden shadow-md border border-gray-200">
+            <img src="assets/Website Belajar Bahasa Jepang/Jepang.png" alt="Detail Interface NihongoLearn" class="w-full object-contain bg-gray-100">
+          </div>
+          
+          <div class="space-y-4">
+            <h4 class="text-lg font-bold text-gray-900 flex items-center gap-2">
+              <i class="fas fa-info-circle text-rose-600"></i> Penjelasan Fitur & Arsitektur Aplikasi
+            </h4>
+            <p class="text-gray-600 leading-relaxed text-sm">
+              NihongoLearn dirancang khusus untuk memecahkan kesulitan pemula dalam menghafal karakter kanji/kana Jepang. Melalui antarmuka yang bersih dan bebas distraksi, aplikasi menyajikan seluruh spektrum huruf Hiragana secara sistematis dengan panduan pelafalan audio real-time.
+            </p>
+
+            <h4 class="text-lg font-bold text-gray-900 flex items-center gap-2 pt-2">
+              <i class="fas fa-layer-group text-rose-600"></i> Spesifikasi Pembelajaran Aksara
+            </h4>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-3 text-sm text-gray-600">
+              <div class="p-3 bg-rose-50/60 rounded-xl border border-rose-100 flex items-start gap-2">
+                <i class="fas fa-check-circle text-rose-600 mt-1"></i>
+                <span><strong>Bagian 1 - Seion (清音):</strong> 46 huruf dasar dari A (あ) hingga N (ん) tersusun dalam baris A, Ka, Sa, Ta, Na, Ha, Ma, Ya, Ra, Wa.</span>
+              </div>
+              <div class="p-3 bg-rose-50/60 rounded-xl border border-rose-100 flex items-start gap-2">
+                <i class="fas fa-check-circle text-rose-600 mt-1"></i>
+                <span><strong>Bagian 2 - Dakuon & Handakuon:</strong> 25 aksara bersuara (Ga, Za, Da, Ba) dan bunyi semi-bersuara (Pa).</span>
+              </div>
+              <div class="p-3 bg-rose-50/60 rounded-xl border border-rose-100 flex items-start gap-2">
+                <i class="fas fa-check-circle text-rose-600 mt-1"></i>
+                <span><strong>Bagian 3 - Yōon (拗音):</strong> 36 kombinasi huruf gabungan berbunyi konsonan + ya/yu/yo kecil (Kya, Sha, Cha, Nya, Hya, Mya, Rya).</span>
+              </div>
+              <div class="p-3 bg-rose-50/60 rounded-xl border border-rose-100 flex items-start gap-2">
+                <i class="fas fa-check-circle text-rose-600 mt-1"></i>
+                <span><strong>Mesin Audio & Kuis Interaktif:</strong> Sintesis Web Audio terintegrasi untuk bunyi pelafalan instan serta modul evaluasi kuis acak.</span>
+              </div>
+            </div>
+
+            <div class="pt-4 border-t border-gray-100 flex items-center justify-end">
+              <a href="https://website-belajar-bahasa-jepang.vercel.app/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 px-5 py-2.5 bg-gradient-to-r from-rose-600 to-red-600 hover:from-rose-700 hover:to-red-700 text-white font-bold rounded-xl shadow-md hover:shadow-lg transition-all text-xs sm:text-sm">
+                <i class="fas fa-external-link-alt text-xs"></i> Buka Website Live Demo
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer Container -->
+  <div id="footer"></div>
+
+  <!-- Scripts -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="main.js"></script>
+  <script>
+    // Ensure modals function reliably across all devices & browsers
+    document.addEventListener("DOMContentLoaded", () => {
+      document.querySelectorAll('[data-modal-target], [data-modal-toggle]').forEach(trigger => {
+        trigger.addEventListener('click', (e) => {
+          e.preventDefault();
+          const targetId = trigger.getAttribute('data-modal-target') || trigger.getAttribute('data-modal-toggle');
+          const modal = document.getElementById(targetId);
+          if (modal) {
+            modal.classList.remove('hidden');
+            modal.classList.add('flex');
+            document.body.style.overflow = 'hidden';
+          }
+        });
+      });
+
+      document.querySelectorAll('[data-modal-hide]').forEach(closeBtn => {
+        closeBtn.addEventListener('click', (e) => {
+          e.preventDefault();
+          const targetId = closeBtn.getAttribute('data-modal-hide');
+          const modal = document.getElementById(targetId);
+          if (modal) {
+            modal.classList.add('hidden');
+            modal.classList.remove('flex');
+            document.body.style.overflow = '';
+          }
+        });
+      });
+
+      document.querySelectorAll('[id^="modal-jepang-"]').forEach(modal => {
+        modal.addEventListener('click', (e) => {
+          if (e.target === modal) {
+            modal.classList.add('hidden');
+            modal.classList.remove('flex');
+            document.body.style.overflow = '';
+          }
+        });
+      });
+
+      document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape') {
+          document.querySelectorAll('[id^="modal-jepang-"]').forEach(modal => {
+            modal.classList.add('hidden');
+            modal.classList.remove('flex');
+          });
+          document.body.style.overflow = '';
+        }
+      });
+    });
+  </script>
+</body>
+
+</html>
