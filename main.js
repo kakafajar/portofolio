@@ -180,21 +180,95 @@ function initContact() {
   }
 }
 
+// Parallax Scrolling Engine
+function initParallax() {
+  const parallaxElements = document.querySelectorAll("[data-parallax]");
+  const progressBar = document.getElementById("scroll-progress");
+  const prefersReduced = window.matchMedia("(prefers-reduced-motion: reduce)");
+
+  if (prefersReduced.matches) return;
+
+  let isTicking = false;
+
+  function update() {
+    const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+    const windowHeight = window.innerHeight;
+    const docHeight = document.documentElement.scrollHeight - windowHeight;
+
+    // Update scroll progress indicator
+    if (progressBar && docHeight > 0) {
+      const progress = (scrollTop / docHeight) * 100;
+      progressBar.style.width = Math.min(100, Math.max(0, progress)) + "%";
+    }
+
+    // Expose scroll distance as CSS variable
+    document.documentElement.style.setProperty("--scroll-y", scrollTop + "px");
+
+    // Process all parallax elements
+    parallaxElements.forEach((el) => {
+      const parent = el.closest("section") || el.parentElement;
+      const boundaryRect = parent ? parent.getBoundingClientRect() : el.getBoundingClientRect();
+
+      // Viewport culling: only calculate for visible or near-visible sections
+      if (boundaryRect.bottom < -150 || boundaryRect.top > windowHeight + 150) return;
+
+      const speed = parseFloat(el.getAttribute("data-parallax-speed")) || 0.1;
+      const type = el.getAttribute("data-parallax") || "relative";
+      const direction = el.getAttribute("data-parallax-dir") || "y";
+
+      let offsetY = 0;
+      let offsetX = 0;
+
+      if (type === "scroll") {
+        // Direct scroll offset (ideal for Hero section elements)
+        offsetY = scrollTop * speed;
+      } else {
+        // Viewport-relative offset based on parent section position
+        const center = boundaryRect.top + boundaryRect.height / 2;
+        const distFromCenter = center - windowHeight / 2;
+        offsetY = distFromCenter * -speed;
+      }
+
+      // Safeguard max offset to prevent content clipping or distortion
+      const maxOffset = parseFloat(el.getAttribute("data-parallax-max")) || 140;
+      offsetY = Math.max(-maxOffset, Math.min(maxOffset, offsetY));
+
+      if (direction === "x") {
+        offsetX = offsetY;
+        offsetY = 0;
+      }
+
+      el.style.transform = `translate3d(${offsetX.toFixed(2)}px, ${offsetY.toFixed(2)}px, 0)`;
+    });
+
+    isTicking = false;
+  }
+
+  function requestTick() {
+    if (!isTicking) {
+      requestAnimationFrame(update);
+      isTicking = true;
+    }
+  }
+
+  window.addEventListener("scroll", requestTick, { passive: true });
+  window.addEventListener("resize", requestTick, { passive: true });
+
+  // Initial trigger
+  requestTick();
+}
+
 const promises = sectionMappings
   .filter(s => document.getElementById(s.id))
   .map(s => loadSection(s.id, s.file).then(() => s.callback && s.callback()));
 
 Promise.all(promises).then(() => {
   initLightbox();
+  initParallax();
   if (typeof AOS !== 'undefined') {
     setTimeout(() => {
       AOS.init({ once: true, duration: 800, offset: 50 });
       AOS.refresh();
     }, 100);
   }
-});
-
-window.addEventListener("scroll", () => {
-  const scrolled = window.pageYOffset * 0.3;
-  document.documentElement.style.setProperty("--scroll", scrolled + "px");
 });

@@ -1,7 +1,9 @@
 <section id="hero" class="relative min-h-screen flex items-center bg-[#0b0f19] pt-28 pb-16 lg:pt-32 lg:pb-0 overflow-hidden">
-  <!-- Ambient Background Glows -->
-  <div class="absolute top-1/4 left-1/6 -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-indigo-600/10 rounded-full blur-3xl pointer-events-none"></div>
-  <div class="absolute bottom-10 right-1/6 w-[32rem] h-[32rem] bg-purple-600/10 rounded-full blur-3xl pointer-events-none"></div>
+  <!-- Ambient Background Glows with Parallax Depth -->
+  <div data-parallax="scroll" data-parallax-speed="-0.25" data-parallax-max="140"
+    class="absolute top-1/4 left-1/6 -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-indigo-600/10 rounded-full blur-3xl pointer-events-none"></div>
+  <div data-parallax="scroll" data-parallax-speed="0.2" data-parallax-max="140"
+    class="absolute bottom-10 right-1/6 w-[32rem] h-[32rem] bg-purple-600/10 rounded-full blur-3xl pointer-events-none"></div>
 
   <div class="container mx-auto px-6 lg:px-12 relative z-10 w-full">
     <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-6 items-end">
@@ -57,13 +59,22 @@
         </div>
       </div>
 
-      <!-- Center Column (5 Cols on LG): Transparent Cutout Photo (me.png) -->
+      <!-- Center Column (5 Cols on LG): Transparent Cutout Photo (me2.png) with Parallax -->
       <div class="lg:col-span-5 relative flex items-end justify-center self-end order-first lg:order-none pt-4 lg:pt-0" data-aos="fade-up" data-aos-duration="1000">
         <!-- Ambient Radial Glow Behind Cutout -->
-        <div class="absolute bottom-10 left-1/2 -translate-x-1/2 w-80 sm:w-[28rem] md:w-[32rem] h-80 sm:h-[28rem] md:h-[32rem] bg-indigo-600/25 rounded-full blur-3xl pointer-events-none"></div>
+        <div data-parallax="scroll" data-parallax-speed="-0.1" data-parallax-max="80"
+          class="absolute bottom-10 left-1/2 -translate-x-1/2 w-80 sm:w-[28rem] md:w-[32rem] h-80 sm:h-[28rem] md:h-[32rem] bg-indigo-600/25 rounded-full blur-3xl pointer-events-none"></div>
 
-        <!-- Cutout Image Container -->
-        <div class="relative z-10 flex items-end justify-center w-full">
+        <!-- Floating Badge with Counter-Parallax -->
+        <div data-parallax="scroll" data-parallax-speed="-0.18" data-parallax-max="70"
+          class="absolute top-2 sm:top-6 -right-2 sm:right-4 z-20 hidden sm:flex items-center gap-2 bg-slate-900/90 backdrop-blur-md border border-indigo-500/40 px-3.5 py-1.5 rounded-full text-[11px] font-mono text-indigo-300 shadow-xl select-none">
+          <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+          <span>Web &amp; AI Portfolio</span>
+        </div>
+
+        <!-- Cutout Image Container with Smooth Vertical Parallax Offset -->
+        <div data-parallax="scroll" data-parallax-speed="0.12" data-parallax-max="90"
+          class="relative z-10 flex items-end justify-center w-full">
           <img
             src="assets/me2.png"
             alt="Fajar Herlambang - Web Developer & AI Specialist"
@@ -73,7 +84,8 @@
       </div>
 
       <!-- Right Column (3 Cols on LG): About Me, My Work, Follow Me Editorial List -->
-      <div class="lg:col-span-3 text-left self-center pb-6 lg:pb-12 space-y-7" data-aos="fade-left" data-aos-duration="900">
+      <div data-parallax="scroll" data-parallax-speed="0.06" data-parallax-max="60"
+        class="lg:col-span-3 text-left self-center pb-6 lg:pb-12 space-y-7" data-aos="fade-left" data-aos-duration="900">
 
         <!-- Block 1: ABOUT ME -->
         <div class="border-b border-slate-800/80 pb-6">

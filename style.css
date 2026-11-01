@@ -60,7 +60,59 @@ body {
   animation: fadeUp 0.6s ease-out forwards;
 }
 
-/* Subtle Ambient Glow */
+/* Ambient Glow & Parallax Elements */
 .ambient-glow {
   background: radial-gradient(circle, rgba(124, 58, 237, 0.35) 0%, rgba(99, 102, 241, 0.15) 50%, transparent 70%);
+}
+
+/* Scroll Progress Bar at the Top */
+#scroll-progress {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 3px;
+  background: linear-gradient(90deg, #6366f1, #8b5cf6, #ec4899);
+  z-index: 100;
+  width: 0%;
+  pointer-events: none;
+  transition: width 0.05s ease-out;
+  box-shadow: 0 0 10px rgba(99, 102, 241, 0.5);
+}
+
+/* Parallax Hardware Acceleration */
+[data-parallax] {
+  will-change: transform;
+  transform: translate3d(0, 0, 0);
+  backface-visibility: hidden;
+}
+
+/* Subtle floating animation for background badges / decorative accents */
+@keyframes subtleFloat {
+  0%, 100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-8px) rotate(1deg);
+  }
+}
+
+.animate-subtle-float {
+  animation: subtleFloat 6s ease-in-out infinite;
+}
+
+/* Accessibility: Disable parallax and animations when user prefers reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  [data-parallax] {
+    transform: none !important;
+    will-change: auto !important;
+  }
+  .animate-subtle-float {
+    animation: none !important;
+  }
+  #scroll-progress {
+    display: none !important;
+  }
+  html {
+    scroll-behavior: auto !important;
+  }
 }
